@@ -231,13 +231,15 @@ def run_baseline(scenarios: list[dict], resume_from: dict | None = None,
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Run the LLM baseline on exam v1.")
+    parser = argparse.ArgumentParser(description="Run the LLM baseline on an exam paper.")
+    parser.add_argument("--exam", type=str, default=None,
+                        help="exam JSON path (default: exam v1, taiji_field/data/exam_v1.json)")
     parser.add_argument("--limit", type=int, default=None, help="run only the first N scenarios")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT))
     parser.add_argument("--resume", action="store_true",
                         help="reuse predictions already in the output file")
     args = parser.parse_args(argv)
-    scenarios = load_exam()["scenarios"]
+    scenarios = load_exam(args.exam)["scenarios"] if args.exam else load_exam()["scenarios"]
     if args.limit:
         scenarios = scenarios[: args.limit]
     resume_from = None

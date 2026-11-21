@@ -4,6 +4,7 @@ taiji_field/data/exam_report_v2.json
 taiji_field/data/exam_report_100.json
 taiji_field/data/exam_report_rich_docs.json
 taiji_field/data/baseline_v1.json
+taiji_field/data/baseline_100.json
 
 # Python
 __pycache__/
