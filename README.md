@@ -39,6 +39,19 @@ baseline is not yet built, and the explanations are templates, not
 understanding. See [docs/phase1-notes.md](docs/phase1-notes.md) for the
 honest limits and the exam score.
 
+**Phase 2 — learned dynamics (done).** Each hexagram is a hypervector
+(`torchhd` MAP, D=10,000); lines are continuous yin–yang ratios in [0,1],
+so states interpolate smoothly between the binary corners; and the path
+scorer is parameterized (endpoint resonance + path coherence + nuclear
+attraction − steps) with weights tuned by grid search on the 30 exam
+scenarios. Honest result: in-sample path matches rose 2/30 → 5/30, but
+the leave-out check (fit on half, test on the other half, both ways)
+gave 2/15 and 0/15 — combined 2/30, exactly Phase 1's number — and the
+fitted weights are unstable across halves. So there is **no evidence
+the dynamics learned a direction that generalizes**; the in-sample gain
+is consistent with overfitting 4 weights on 30 draft labels. That is a
+result, not a failure to hide. See [docs/phase2-notes.md](docs/phase2-notes.md).
+
 No LLM calls anywhere in this codebase — that is the point.
 
 ## Install
@@ -75,6 +88,13 @@ python -m taiji_field.reasoning "两个部门为项目归属僵持了三周，�
 
 # Phase 1: run the 30-scenario exam paper, write the JSON report
 python -m taiji_field.exam
+
+# Phase 2: interpolate between two hexagrams in continuous space
+python -m taiji_field.continuous 1 2 --steps 5
+
+# Phase 2: run the exam with the fitted dynamics scorer (fits weights,
+# leave-out check, writes exam_report_v2.json — never overwrites v1)
+python -m taiji_field.exam --reasoner v2
 
 # Re-render the graph visualization
 python -m taiji_field.viz

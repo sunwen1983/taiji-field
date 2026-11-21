@@ -15,6 +15,7 @@ dependencies = [
     "numpy",
     "matplotlib",
     "sentence-transformers",
+    "torch-hd",
     "zhouyi-6bit",
 ]
 
