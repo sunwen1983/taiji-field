@@ -1,0 +1,5865 @@
+{
+ "hexagrams": [
+  {
+   "king_wen": 1,
+   "name_zh": "乾",
+   "pinyin": "Qian",
+   "unicode": "䷀",
+   "bits": "111111",
+   "reading": "创造与主导：势头向上，主动开创，适合带头做事。"
+  },
+  {
+   "king_wen": 2,
+   "name_zh": "坤",
+   "pinyin": "Kun",
+   "unicode": "䷁",
+   "bits": "000000",
+   "reading": "顺应与承载：顺势而为，厚德载物，以柔成事。"
+  },
+  {
+   "king_wen": 3,
+   "name_zh": "屯",
+   "pinyin": "Zhun",
+   "unicode": "䷂",
+   "bits": "100010",
+   "reading": "万事开头难：初生艰难，宜守不宜攻，先站稳脚跟。"
+  },
+  {
+   "king_wen": 4,
+   "name_zh": "蒙",
+   "pinyin": "Meng",
+   "unicode": "䷃",
+   "bits": "010001",
+   "reading": "启蒙与学习：不懂就问，像学生一样虚心求教。"
+  },
+  {
+   "king_wen": 5,
+   "name_zh": "需",
+   "pinyin": "Xu",
+   "unicode": "䷄",
+   "bits": "111010",
+   "reading": "等待时机：时机未到，耐心等待，养精蓄锐。"
+  },
+  {
+   "king_wen": 6,
+   "name_zh": "讼",
+   "pinyin": "Song",
+   "unicode": "䷅",
+   "bits": "010111",
+   "reading": "争执与冲突：起了争端，宜和解退让，不宜硬争到底。"
+  },
+  {
+   "king_wen": 7,
+   "name_zh": "师",
+   "pinyin": "Shi",
+   "unicode": "䷆",
+   "bits": "010000",
+   "reading": "组织与带队：需要纪律和统帅，像带队伍打仗一样行动。"
+  },
+  {
+   "king_wen": 8,
+   "name_zh": "比",
+   "pinyin": "Bi",
+   "unicode": "䷇",
+   "bits": "000010",
+   "reading": "亲近与结盟：互相依靠，团结起来才有力量。"
+  },
+  {
+   "king_wen": 9,
+   "name_zh": "小畜",
+   "pinyin": "Xiao Chu",
+   "unicode": "䷈",
+   "bits": "111011",
+   "reading": "小有积蓄：小有收获，力量还不够，继续积累。"
+  },
+  {
+   "king_wen": 10,
+   "name_zh": "履",
+   "pinyin": "Lu",
+   "unicode": "䷉",
+   "bits": "110111",
+   "reading": "谨慎前行：如履薄冰，小心做事，守规矩。"
+  },
+  {
+   "king_wen": 11,
+   "name_zh": "泰",
+   "pinyin": "Tai",
+   "unicode": "䷊",
+   "bits": "111000",
+   "reading": "通达顺畅：上下沟通，局面打开了，否极泰来。"
+  },
+  {
+   "king_wen": 12,
+   "name_zh": "否",
+   "pinyin": "Pi",
+   "unicode": "䷋",
+   "bits": "000111",
+   "reading": "闭塞僵局：上下不通，卡住了，先守住再说。"
+  },
+  {
+   "king_wen": 13,
+   "name_zh": "同人",
+   "pinyin": "Tong Ren",
+   "unicode": "䷌",
+   "bits": "101111",
+   "reading": "与人和同：志同道合的人聚在一起，公开合作。"
+  },
+  {
+   "king_wen": 14,
+   "name_zh": "大有",
+   "pinyin": "Da You",
+   "unicode": "䷍",
+   "bits": "111101",
+   "reading": "丰收在手：收获很大，宜分享，不宜独占。"
+  },
+  {
+   "king_wen": 15,
+   "name_zh": "谦",
+   "pinyin": "Qian",
+   "unicode": "䷎",
+   "bits": "001000",
+   "reading": "谦逊低调：功成不居，越低调越稳。"
+  },
+  {
+   "king_wen": 16,
+   "name_zh": "豫",
+   "pinyin": "Yu",
+   "unicode": "䷏",
+   "bits": "000100",
+   "reading": "愉悦与准备：心情松快，但别只顾高兴，要预做准备。"
+  },
+  {
+   "king_wen": 17,
+   "name_zh": "随",
+   "pinyin": "Sui",
+   "unicode": "䷐",
+   "bits": "100110",
+   "reading": "顺势跟随：跟着对的人走，顺应变化。"
+  },
+  {
+   "king_wen": 18,
+   "name_zh": "蛊",
+   "pinyin": "Gu",
+   "unicode": "䷑",
+   "bits": "011001",
+   "reading": "整治积弊：内部出了问题，要动手整治、拨乱反正。"
+  },
+  {
+   "king_wen": 19,
+   "name_zh": "临",
+   "pinyin": "Lin",
+   "unicode": "䷒",
+   "bits": "110000",
+   "reading": "临近与督导：亲自到场，监督推动，机会在眼前。"
+  },
+  {
+   "king_wen": 20,
+   "name_zh": "观",
+   "pinyin": "Guan",
+   "unicode": "䷓",
+   "bits": "000011",
+   "reading": "观察与展示：先看清楚再做决定；自己也在被别人看着。"
+  },
+  {
+   "king_wen": 21,
+   "name_zh": "噬嗑",
+   "pinyin": "Shi He",
+   "unicode": "䷔",
+   "bits": "100101",
+   "reading": "咬合突破：中间有梗阻，要下决心啃掉它。"
+  },
+  {
+   "king_wen": 22,
+   "name_zh": "贲",
+   "pinyin": "Bi",
+   "unicode": "䷕",
+   "bits": "101001",
+   "reading": "装饰与体面：外表光鲜，内容为本，别只做表面。"
+  },
+  {
+   "king_wen": 23,
+   "name_zh": "剥",
+   "pinyin": "Bo",
+   "unicode": "䷖",
+   "bits": "000001",
+   "reading": "剥落衰败：根基被一点点剥掉，宜守不宜进。"
+  },
+  {
+   "king_wen": 24,
+   "name_zh": "复",
+   "pinyin": "Fu",
+   "unicode": "䷗",
+   "bits": "100000",
+   "reading": "回归与复苏：低谷反弹，重新开始，一阳来复。"
+  },
+  {
+   "king_wen": 25,
+   "name_zh": "无妄",
+   "pinyin": "Wu Wang",
+   "unicode": "䷘",
+   "bits": "100111",
+   "reading": "顺其自然：不妄动，不强求，按本分做事。"
+  },
+  {
+   "king_wen": 26,
+   "name_zh": "大畜",
+   "pinyin": "Da Chu",
+   "unicode": "䷙",
+   "bits": "111001",
+   "reading": "蓄势待发：积蓄力量，等到时机一到就大干。"
+  },
+  {
+   "king_wen": 27,
+   "name_zh": "颐",
+   "pinyin": "Yi",
+   "unicode": "䷚",
+   "bits": "100001",
+   "reading": "滋养与口腹：靠什么养自己，言语和饮食都要节制。"
+  },
+  {
+   "king_wen": 28,
+   "name_zh": "大过",
+   "pinyin": "Da Guo",
+   "unicode": "䷛",
+   "bits": "011110",
+   "reading": "负担过重：担子太重，结构快撑不住，要减负。"
+  },
+  {
+   "king_wen": 29,
+   "name_zh": "坎",
+   "pinyin": "Kan",
+   "unicode": "䷜",
+   "bits": "010010",
+   "reading": "重重险阻：一坑接一坑，险中求生，保持冷静。"
+  },
+  {
+   "king_wen": 30,
+   "name_zh": "离",
+   "pinyin": "Li",
+   "unicode": "䷝",
+   "bits": "101101",
+   "reading": "光明与依附：像火一样明亮，依附于正道才能持久。"
+  },
+  {
+   "king_wen": 31,
+   "name_zh": "咸",
+   "pinyin": "Xian",
+   "unicode": "䷞",
+   "bits": "001110",
+   "reading": "感应与心动：两心相感，互相吸引，情感先行。"
+  },
+  {
+   "king_wen": 32,
+   "name_zh": "恒",
+   "pinyin": "Heng",
+   "unicode": "䷟",
+   "bits": "011100",
+   "reading": "持久与恒定：长久坚持，靠的是稳定的节奏。"
+  },
+  {
+   "king_wen": 33,
+   "name_zh": "遁",
+   "pinyin": "Dun",
+   "unicode": "䷠",
+   "bits": "001111",
+   "reading": "退避与抽身：时机不对，体面地退一步，保存实力。"
+  },
+  {
+   "king_wen": 34,
+   "name_zh": "大壮",
+   "pinyin": "Da Zhuang",
+   "unicode": "䷡",
+   "bits": "111100",
+   "reading": "力量强盛：气势正旺，但别逞强，守住分寸。"
+  },
+  {
+   "king_wen": 35,
+   "name_zh": "晋",
+   "pinyin": "Jin",
+   "unicode": "䷢",
+   "bits": "000101",
+   "reading": "晋升与前进：太阳升起，向上发展，宜主动争取。"
+  },
+  {
+   "king_wen": 36,
+   "name_zh": "明夷",
+   "pinyin": "Ming Yi",
+   "unicode": "䷣",
+   "bits": "101000",
+   "reading": "光明受损：环境黑暗，韬光养晦，保全自己。"
+  },
+  {
+   "king_wen": 37,
+   "name_zh": "家人",
+   "pinyin": "Jia Ren",
+   "unicode": "䷤",
+   "bits": "101011",
+   "reading": "家与分工：家里各有其位，内外分工，先齐家。"
+  },
+  {
+   "king_wen": 38,
+   "name_zh": "睽",
+   "pinyin": "Kui",
+   "unicode": "䷥",
+   "bits": "110101",
+   "reading": "背离与分歧：看法不同，各走各的，求同存异。"
+  },
+  {
+   "king_wen": 39,
+   "name_zh": "蹇",
+   "pinyin": "Jian",
+   "unicode": "䷦",
+   "bits": "001010",
+   "reading": "寸步难行：进退两难，走不动了，找人帮忙。"
+  },
+  {
+   "king_wen": 40,
+   "name_zh": "解",
+   "pinyin": "Xie",
+   "unicode": "䷧",
+   "bits": "010100",
+   "reading": "解开与释放：困局松动了，赶紧脱身，别恋战。"
+  },
+  {
+   "king_wen": 41,
+   "name_zh": "损",
+   "pinyin": "Sun",
+   "unicode": "䷨",
+   "bits": "110001",
+   "reading": "有所减损：先舍后得，减掉多余的才能轻装上路。"
+  },
+  {
+   "king_wen": 42,
+   "name_zh": "益",
+   "pinyin": "Yi",
+   "unicode": "䷩",
+   "bits": "100011",
+   "reading": "有所增益：彼此受益，宜往前走，利人利己。"
+  },
+  {
+   "king_wen": 43,
+   "name_zh": "夬",
+   "pinyin": "Guai",
+   "unicode": "䷪",
+   "bits": "111110",
+   "reading": "决断与清除：到了该拍板的时候，公开决断，清除隐患。"
+  },
+  {
+   "king_wen": 44,
+   "name_zh": "姤",
+   "pinyin": "Gou",
+   "unicode": "䷫",
+   "bits": "011111",
+   "reading": "不期而遇：意外相遇，机会突然出现，也要防备。"
+  },
+  {
+   "king_wen": 45,
+   "name_zh": "萃",
+   "pinyin": "Cui",
+   "unicode": "䷬",
+   "bits": "000110",
+   "reading": "聚集与汇合：人、资源聚到一起，趁势成事。"
+  },
+  {
+   "king_wen": 46,
+   "name_zh": "升",
+   "pinyin": "Sheng",
+   "unicode": "䷭",
+   "bits": "011000",
+   "reading": "步步上升：像树一样慢慢长，稳步上升。"
+  },
+  {
+   "king_wen": 47,
+   "name_zh": "困",
+   "pinyin": "Kun",
+   "unicode": "䷮",
+   "bits": "010110",
+   "reading": "困顿受阻：被困住了，内心要稳住，等转机。"
+  },
+  {
+   "king_wen": 48,
+   "name_zh": "井",
+   "pinyin": "Jing",
+   "unicode": "䷯",
+   "bits": "011010",
+   "reading": "滋养与根基：井水取之不竭，养好根本，别只顾眼前。"
+  },
+  {
+   "king_wen": 49,
+   "name_zh": "革",
+   "pinyin": "Ge",
+   "unicode": "䷰",
+   "bits": "101110",
+   "reading": "变革与革新：旧的要改，变革要顺应人心、讲清楚。"
+  },
+  {
+   "king_wen": 50,
+   "name_zh": "鼎",
+   "pinyin": "Ding",
+   "unicode": "䷱",
+   "bits": "011101",
+   "reading": "立新与鼎立：新局面立起来了，宜稳固、宜分享成果。"
+  },
+  {
+   "king_wen": 51,
+   "name_zh": "震",
+   "pinyin": "Zhen",
+   "unicode": "䷲",
+   "bits": "100100",
+   "reading": "震动与惊醒：突然的震动让人警醒，动起来反而是好事。"
+  },
+  {
+   "king_wen": 52,
+   "name_zh": "艮",
+   "pinyin": "Gen",
+   "unicode": "䷳",
+   "bits": "001001",
+   "reading": "止与静：该停就停，守住边界，别乱动。"
+  },
+  {
+   "king_wen": 53,
+   "name_zh": "渐",
+   "pinyin": "Jian",
+   "unicode": "䷴",
+   "bits": "001011",
+   "reading": "循序渐进：像大雁一样一步步来，稳扎稳打。"
+  },
+  {
+   "king_wen": 54,
+   "name_zh": "归妹",
+   "pinyin": "Gui Mei",
+   "unicode": "䷵",
+   "bits": "110100",
+   "reading": "不当的位置：位置不对、名分不正，宜谨慎，别强求。"
+  },
+  {
+   "king_wen": 55,
+   "name_zh": "丰",
+   "pinyin": "Feng",
+   "unicode": "䷶",
+   "bits": "101100",
+   "reading": "丰盛与盛极：正是最盛的时候，盛极要防衰。"
+  },
+  {
+   "king_wen": 56,
+   "name_zh": "旅",
+   "pinyin": "Lu",
+   "unicode": "䷷",
+   "bits": "001101",
+   "reading": "羁旅在外：在外漂泊，靠人帮衬，小心行事。"
+  },
+  {
+   "king_wen": 57,
+   "name_zh": "巽",
+   "pinyin": "Xun",
+   "unicode": "䷸",
+   "bits": "011011",
+   "reading": "顺从与渗透：像风一样无孔不入，柔顺而坚持。"
+  },
+  {
+   "king_wen": 58,
+   "name_zh": "兑",
+   "pinyin": "Dui",
+   "unicode": "䷹",
+   "bits": "110110",
+   "reading": "喜悦与交流：以言语取悦人，坦诚沟通，皆大欢喜。"
+  },
+  {
+   "king_wen": 59,
+   "name_zh": "涣",
+   "pinyin": "Huan",
+   "unicode": "䷺",
+   "bits": "010011",
+   "reading": "涣散与离心：人心散了，要重新凝聚，分散反而能解困。"
+  },
+  {
+   "king_wen": 60,
+   "name_zh": "节",
+   "pinyin": "Jie",
+   "unicode": "䷻",
+   "bits": "110010",
+   "reading": "节制与分寸：凡事有度，知道什么时候停。"
+  },
+  {
+   "king_wen": 61,
+   "name_zh": "中孚",
+   "pinyin": "Zhong Fu",
+   "unicode": "䷼",
+   "bits": "110011",
+   "reading": "诚信在内：心中有诚信，别人自然信你。"
+  },
+  {
+   "king_wen": 62,
+   "name_zh": "小过",
+   "pinyin": "Xiao Guo",
+   "unicode": "䷽",
+   "bits": "001100",
+   "reading": "小有过越：小事上可以过一点，大事仍要守规矩。"
+  },
+  {
+   "king_wen": 63,
+   "name_zh": "既济",
+   "pinyin": "Ji Ji",
+   "unicode": "䷾",
+   "bits": "101010",
+   "reading": "已成定局：事情成了，但别松懈，守成比创业难。"
+  },
+  {
+   "king_wen": 64,
+   "name_zh": "未济",
+   "pinyin": "Wei Ji",
+   "unicode": "䷿",
+   "bits": "010101",
+   "reading": "未成定局：事情还没成，仍在路上，保持希望。"
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "F01",
+   "category": "工作决策",
+   "scenario": "公司要砍掉一个做了三年的老产品线，团队里有人反对、有人觉得早该砍了，负责人迟迟下不了决心。",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 34,
+    "end_name": "大壮",
+    "rationale": "决断到了中段：公开拍板、清除隐患，拖下去只会更难。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.537
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.537,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     1,
+     3
+    ],
+    "end_king_wen": 41,
+    "end_name": "损",
+    "rationale": "老产品线积弊已深、内部意见分裂，正处整治积弊的蛊卦；初爻与三爻动，说明既要纠正旧根基的积弊，又要在决断中避免过度刚猛，转向蒙卦所示先厘清认知、虚心求教再定去留。"
+   }
+  },
+  {
+   "id": "F02",
+   "category": "工作决策",
+   "scenario": "新项目招不到合适的人，猎头推的人都不合适，是降低标准先招进来，还是继续等？",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "rationale": "等待中别干等：先把手头能做的事做好，等合适的人出现。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.574
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.574,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2,
+     3
+    ],
+    "end_king_wen": 3,
+    "end_name": "屯",
+    "rationale": "招不到人、猎头推荐皆不合，正是时机未到宜耐心等待之象；但等待中易生焦虑而想降标凑合，故二爻三爻动，由需转兑，提醒以坦诚沟通厘清标准、和悦商议，而非仓促降低要求。"
+   }
+  },
+  {
+   "id": "F03",
+   "category": "工作决策",
+   "scenario": "两个团队合并，职级和汇报线要重新排，有人担心自己被边缘化，气氛紧张。",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 39,
+    "end_name": "蹇",
+    "rationale": "结盟要公开讲清楚：含糊其辞只会让人猜疑。"
+   },
+   "pass_b": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 45,
+    "end_name": "萃",
+    "top1_score": 0.575
+   },
+   "system": {
+    "top1_king_wen": 8,
+    "top1_name": "比",
+    "top1_score": 0.575,
+    "path_start_king_wen": 8,
+    "path_moving_lines": [
+     5,
+     6
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     1,
+     4,
+     6
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "合并后职级汇报线未定，各方看法分歧、彼此猜疑，正合睽卦背离之象；初、四、上爻动则分歧逐步化解、上下沟通打开，转为泰卦通达。"
+   }
+  },
+  {
+   "id": "F04",
+   "category": "工作决策",
+   "scenario": "老板突然让接手一个烂尾项目，前任留下一堆坑，接还是推？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 26,
+    "end_name": "大畜",
+    "rationale": "烂摊子要从最底层的问题动手整治。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 12,
+    "end_name": "否",
+    "top1_score": 0.495
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.495,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 12,
+    "path_end_name": "否"
+   },
+   "llm": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     2,
+     3
+    ],
+    "end_king_wen": 23,
+    "end_name": "剥",
+    "rationale": "烂尾项目积弊丛生，正是“蛊”卦整治积弊之象；接手后先摸清前任留下的坑（九二干母之蛊不可贞、九三干父之蛊小有悔无大咎），宜先止住乱局、厘清边界再动，故动二、三爻变为艮卦，先止后治。"
+   }
+  },
+  {
+   "id": "F05",
+   "category": "工作决策",
+   "scenario": "季度目标定得太高，团队拼尽全力也够不着，是申请下调目标，还是硬扛？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 31,
+    "end_name": "咸",
+    "rationale": "担子太重：先把目标调到结构撑得住的水平。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.546
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.546,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "目标过高使团队如负重梁、结构将倾，正合大过；三、四爻动则下巽上坎成井，提示与其硬扛不如回头养本、调整目标以保根基。"
+   }
+  },
+  {
+   "id": "F06",
+   "category": "工作决策",
+   "scenario": "核心员工提离职，手里还攥着关键客户，是加薪留人，还是放手？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 45,
+    "start_name": "萃",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 17,
+    "end_name": "随",
+    "rationale": "人聚到一起：先把诚意摆出来，留人的事再谈条件。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.447
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.447,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "核心员工以关键客户为筹码提离职，双方陷入互相牵制的困局；九四、九五两爻动，困局由内而外松动，转向兑卦的坦诚沟通与协商，以对话换取皆大欢喜的留人或体面放手。"
+   }
+  },
+  {
+   "id": "F07",
+   "category": "工作决策",
+   "scenario": "跨部门合作，对方总是不回消息、拖进度，是直接找对方老板，还是再忍忍？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 35,
+    "end_name": "晋",
+    "rationale": "争执不下：先退一步找中间人，再由高位的人出面松动局面。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.519
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.519,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 23,
+    "end_name": "剥",
+    "rationale": "跨部门沟通上下不通、进度卡住，正是否卦闭塞之象；但问题出在中间执行层，宜先推动对方内部松动（四、五爻由阴转阳），而非直接越级硬闯，松动后即转泰卦通达。"
+   }
+  },
+  {
+   "id": "F08",
+   "category": "工作决策",
+   "scenario": "公司推行新工具，团队抵触，说老办法挺好的，怎么推？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 49,
+    "start_name": "革",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 17,
+    "end_name": "随",
+    "rationale": "变革要讲清楚好处：时机未到硬推只会激起抵触。"
+   },
+   "pass_b": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.517
+   },
+   "system": {
+    "top1_king_wen": 9,
+    "top1_name": "小畜",
+    "top1_score": 0.517,
+    "path_start_king_wen": 9,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 26,
+    "path_end_name": "大畜"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "团队与新工具看法背离、各执一端，正合睽卦；二爻与五爻由刚转柔、上下相感，化背离为坦诚交流，故变为兑卦。"
+   }
+  },
+  {
+   "id": "F09",
+   "category": "工作决策",
+   "scenario": "项目做了一半，发现当初的技术选型错了，重构代价很大，继续凑合还是推倒重来？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 23,
+    "start_name": "剥",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "根基被剥掉大半：先保住能用的部分，再谈重构。"
+   },
+   "pass_b": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.508
+   },
+   "system": {
+    "top1_king_wen": 28,
+    "top1_name": "大过",
+    "top1_score": 0.508,
+    "path_start_king_wen": 28,
+    "path_moving_lines": [
+     6,
+     1
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     1,
+     3
+    ],
+    "end_king_wen": 41,
+    "end_name": "损",
+    "rationale": "技术选型错误如同积弊已成蛊，须动手整治；初爻与三爻动，由整治积弊转向启蒙求教、重新学习正确方案，对应推倒重来前的重新评估。"
+   }
+  },
+  {
+   "id": "F10",
+   "category": "工作决策",
+   "scenario": "年终奖分配，同事觉得不公平，私下抱怨，是公开标准还是私下安抚？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 60,
+    "start_name": "节",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 58,
+    "end_name": "兑",
+    "rationale": "分寸要公开：标准摆清楚了，抱怨才有处安放。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 13,
+    "end_name": "同人",
+    "top1_score": 0.534
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.534,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 35,
+    "end_name": "晋",
+    "rationale": "年终奖分配引发同事私下抱怨，已起争端，宜和解退让而非硬争；二爻退让不争、五爻居中裁断，若处理不当则上下不通，转为否卦僵局。"
+   }
+  },
+  {
+   "id": "F11",
+   "category": "工作决策",
+   "scenario": "新业务方向，老板想 all in，团队觉得风险太大，怎么劝？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 34,
+    "start_name": "大壮",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 11,
+    "end_name": "泰",
+    "rationale": "气势正旺：提醒守住分寸，强极易折。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.522
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.522,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 11,
+    "end_name": "泰",
+    "rationale": "老板要果断拍板 all in，团队却担心风险，正处决断关口；劝谏宜从九五刚决转向九四犹疑、以柔缓其势，翻成雷天大壮，提醒强势之下须守分寸、别逞强。"
+   }
+  },
+  {
+   "id": "F12",
+   "category": "工作决策",
+   "scenario": "供应商突然断供，生产线要停，是紧急找替代，还是停下来等？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 29,
+    "start_name": "坎",
+    "moving_lines": [
+     2,
+     6
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "险中求生：先找能顶上的替代方案，再把供应链的后路想清楚。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.528
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.528,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 46,
+    "end_name": "升",
+    "rationale": "断供使生产寸步难行，正合蹇卦进退两难；但九五居尊位、六二得中，动则化险为夷，由蹇转升，宜先稳住核心再寻替代逐步恢复。"
+   }
+  },
+  {
+   "id": "F13",
+   "category": "工作决策",
+   "scenario": "团队里两个人因为分工吵起来了，谁也不服谁，负责人怎么调解？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 41,
+    "end_name": "损",
+    "rationale": "各走各的：先找到两人都能接受的小共识。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "top1_score": 0.588
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.588,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 59,
+    "path_end_name": "涣"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "两人各执一词、互不相让，正是讼卦之争；负责人居中调解需先退让沟通，若只压不服、上下不通，则二爻与四爻翻转成否卦，陷入僵局。"
+   }
+  },
+  {
+   "id": "F14",
+   "category": "工作决策",
+   "scenario": "准备跳槽去创业公司，薪水涨 40% 但不稳定，留在大厂安稳但天花板明显，怎么选？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 3,
+    "start_name": "屯",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 8,
+    "end_name": "比",
+    "rationale": "开头难：先想清楚自己能不能扛住最初的难，再动。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.559
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.559,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2,
+     3
+    ],
+    "end_king_wen": 3,
+    "end_name": "屯",
+    "rationale": "薪水涨四成但公司不稳，眼下最像“需”——时机未熟、宜养精蓄锐；二爻三爻动，由等待转为“节”，提示先算清风险边界、给自己定好止损分寸再动。"
+   }
+  },
+  {
+   "id": "F15",
+   "category": "工作决策",
+   "scenario": "公司要裁员，名单里有跟了自己三年的老员工，怎么开口谈？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 26,
+    "end_name": "大畜",
+    "rationale": "有所减损：把补偿和出路谈清楚，减掉的才不至于伤人太重。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 49,
+    "end_name": "革",
+    "top1_score": 0.468
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.468,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 42,
+    "end_name": "益",
+    "rationale": "裁员是主动减损、先舍后得，二爻与五爻动，由损转颐，提醒开口时以滋养对方生计与尊严为本，言语有度。"
+   }
+  },
+  {
+   "id": "F16",
+   "category": "工作决策",
+   "scenario": "客户要求的功能根本做不出来，销售已经答应了，怎么跟客户解释？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 61,
+    "start_name": "中孚",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 10,
+    "end_name": "履",
+    "rationale": "靠诚信：把做不到的实情讲清楚，对方反而可能信你。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.481
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.481,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "销售已答应却做不出来，客户必然追责，局面已起争端（讼）；初爻与四爻动，由争讼转为涣散，需坦诚沟通、重新凝聚信任来化解。"
+   }
+  },
+  {
+   "id": "F17",
+   "category": "工作决策",
+   "scenario": "两个项目同时到 deadline，人手不够，保哪个、放哪个？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 52,
+    "start_name": "艮",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 53,
+    "end_name": "渐",
+    "rationale": "该停就停：保住一个、停掉一个，比两个都做砸强。"
+   },
+   "pass_b": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 39,
+    "end_name": "蹇",
+    "top1_score": 0.446
+   },
+   "system": {
+    "top1_king_wen": 8,
+    "top1_name": "比",
+    "top1_score": 0.446,
+    "path_start_king_wen": 8,
+    "path_moving_lines": [
+     5,
+     6
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "两个 deadline 同时压来、人手不足，正像栋梁承重过甚的“大过”之局；此时不宜硬撑全保，而应如九三、九四所动，果断取舍、减负转向，回到“井”那样守住根本、养好核心项目。"
+   }
+  },
+  {
+   "id": "F18",
+   "category": "工作决策",
+   "scenario": "入职新公司三个月，发现文化和预期差很多，是适应还是再找？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 56,
+    "start_name": "旅",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 50,
+    "end_name": "鼎",
+    "rationale": "在外漂泊：先靠身边的人摸清情况，别急着下结论。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.525
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.525,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     1,
+     3
+    ],
+    "end_king_wen": 50,
+    "end_name": "鼎",
+    "rationale": "入职三月发现文化与预期背离，正合睽卦分歧之象；初爻与三爻动，由背离转向求同存异、汇聚资源，遂成大有。"
+   }
+  },
+  {
+   "id": "F19",
+   "category": "工作决策",
+   "scenario": "团队连续拿了两个季度第一，老板想趁热打铁再定个更高的目标，团队已经很累了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 55,
+    "start_name": "丰",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 36,
+    "end_name": "明夷",
+    "rationale": "正盛时主动收敛：盛极要防衰，别等到撑不住才停。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.544
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.544,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     1,
+     5
+    ],
+    "end_king_wen": 34,
+    "end_name": "大壮",
+    "rationale": "团队连续第一后老板再加更高目标，担子已超出承受，如大过之栋梁弯曲；初爻与五爻动，由过重转向恒久节奏，提示减负并建立可持续的稳定步调。"
+   }
+  },
+  {
+   "id": "F20",
+   "category": "工作决策",
+   "scenario": "老客户突然要换供应商，理由是价格，是降价挽留还是放手？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 42,
+    "start_name": "益",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 27,
+    "end_name": "颐",
+    "rationale": "利人利己：把长期合作的账算清楚，价格之外还有价值。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 10,
+    "end_name": "履",
+    "top1_score": 0.486
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.486,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 12,
+    "path_end_name": "否"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "客户因价格分歧而背离，正合睽卦；二爻五爻由阳转阴，成蛊卦，提示与其降价硬留，不如借机整治合作积弊、重新厘清价值。"
+   }
+  },
+  {
+   "id": "F21",
+   "category": "谈判",
+   "scenario": "房东突然要涨租 30%，合同还没到期，是硬刚还是谈？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "争执：先把合同和依据摆出来，再退一步换个谈法，硬争到底两败俱伤。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.416
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.416,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "合同未到期房东突涨租已起争端，宜先据理沟通而非硬拼；二爻退让守中、四爻由争转不争，讼化为否，提示若谈不拢会陷入僵局，需先守住底线再寻转机。"
+   }
+  },
+  {
+   "id": "F22",
+   "category": "谈判",
+   "scenario": "和合伙人谈股份，对方要 60%，你觉得五五开才合理，谈了两次没谈拢。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 13,
+    "start_name": "同人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 1,
+    "end_name": "乾",
+    "rationale": "志同道合：股份的事先放一放，把合作先跑起来再谈。"
+   },
+   "pass_b": {
+    "start_king_wen": 45,
+    "start_name": "萃",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 8,
+    "end_name": "比",
+    "top1_score": 0.487
+   },
+   "system": {
+    "top1_king_wen": 45,
+    "top1_name": "萃",
+    "top1_score": 0.487,
+    "path_start_king_wen": 45,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 8,
+    "path_end_name": "比"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 57,
+    "end_name": "巽",
+    "rationale": "股份比例谈不拢、两次不欢而散，正合讼卦争执之象；三爻四爻由争转让、以柔顺渗透重新沟通，则讼变巽，宜退一步换方式再谈。"
+   }
+  },
+  {
+   "id": "F23",
+   "category": "谈判",
+   "scenario": "买二手房，中介说房东就这个价、不谈了，房子你很喜欢但超预算。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 60,
+    "start_name": "节",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 19,
+    "end_name": "临",
+    "rationale": "守住分寸：把预算底线亮清楚，谈不拢就走，别被喜欢冲昏头。"
+   },
+   "pass_b": {
+    "start_king_wen": 54,
+    "start_name": "归妹",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 58,
+    "end_name": "兑",
+    "top1_score": 0.454
+   },
+   "system": {
+    "top1_king_wen": 54,
+    "top1_name": "归妹",
+    "top1_score": 0.454,
+    "path_start_king_wen": 54,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 38,
+    "path_end_name": "睽"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 2,
+    "end_name": "坤",
+    "rationale": "房价超预算、房东不谈，进退两难如蹇卦；但房子很喜欢，宜从僵持中松动，三爻返身、五爻求助中介斡旋，翻转后成豫，先松心再预作准备。"
+   }
+  },
+  {
+   "id": "F24",
+   "category": "谈判",
+   "scenario": "和投资人谈估值，对方压得很低，但公司账上钱只够三个月。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 58,
+    "end_name": "兑",
+    "rationale": "被困住了：先稳住，别在缺钱的时候贱卖公司。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.445
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.445,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "账上只够三个月、估值被压，正是受困之局；但九四、九五动而由困转兑，提示以坦诚沟通、和悦谈判打开局面，而非硬争。"
+   }
+  },
+  {
+   "id": "F25",
+   "category": "谈判",
+   "scenario": "和客户谈账期，对方要 90 天，我们只能接受 30 天，订单很大不想丢。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "小有收获：先让一小步把订单保住，再慢慢谈账期。"
+   },
+   "pass_b": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.379
+   },
+   "system": {
+    "top1_king_wen": 28,
+    "top1_name": "大过",
+    "top1_score": 0.379,
+    "path_start_king_wen": 28,
+    "path_moving_lines": [
+     6,
+     1
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "双方账期立场相背如睽卦，二爻五爻相应而变，由分歧走向谈成新条款的革卦。"
+   }
+  },
+  {
+   "id": "F26",
+   "category": "谈判",
+   "scenario": "公司并购谈判，对方要求核心团队签三年竞业，团队有人不愿意。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "rationale": "各有其位：把竞业的条件和补偿谈清楚，家里先达成一致。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "top1_score": 0.448
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.448,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 59,
+    "path_end_name": "涣"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "双方在竞业条款上看法背离、各持立场，正合睽卦求同存异之象；二爻与五爻相应而动，提示核心团队与对方需在关键条款上重新沟通、整治分歧，翻转为蛊卦，意味着要动手修正不合理条款、拨乱反正。"
+   }
+  },
+  {
+   "id": "F27",
+   "category": "谈判",
+   "scenario": "和政府部门谈补贴，材料交了三轮，每次都说缺这个缺那个。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 8,
+    "end_name": "比",
+    "rationale": "走不动了：找个熟悉流程的人带路，别自己硬闯。"
+   },
+   "pass_b": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "top1_score": 0.44
+   },
+   "system": {
+    "top1_king_wen": 41,
+    "top1_name": "损",
+    "top1_score": 0.44,
+    "path_start_king_wen": 41,
+    "path_moving_lines": [
+     2,
+     6
+    ],
+    "path_end_king_wen": 24,
+    "path_end_name": "复"
+   },
+   "llm": {
+    "start_king_wen": 29,
+    "start_name": "坎",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 46,
+    "end_name": "升",
+    "rationale": "材料反复被退、一坑接一坑正是坎卦重重险阻之象；动三爻与五爻由险中转求根本滋养，变井卦，提示养好材料与沟通根基、以井养人方能取信过关。"
+   }
+  },
+  {
+   "id": "F28",
+   "category": "谈判",
+   "scenario": "离婚谈判，财产分割谈不拢，双方都请了律师，孩子夹在中间。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 1,
+    "end_name": "乾",
+    "rationale": "背离：先把孩子的安排谈妥，再由高位的人让一步，财产的事慢慢谈。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "top1_score": 0.497
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.497,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 59,
+    "path_end_name": "涣"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 57,
+    "end_name": "巽",
+    "rationale": "双方各请律师、财产争持不下，正是讼卦争执之象；三爻四爻由争转柔，化讼为巽，以渗透沟通、顺势退让来解开僵局。"
+   }
+  },
+  {
+   "id": "F29",
+   "category": "谈判",
+   "scenario": "和明星主播谈合作，对方要价高得离谱，但流量确实大。",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 14,
+    "start_name": "大有",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 38,
+    "end_name": "睽",
+    "rationale": "收获很大：把分成谈成利益共享，别一次性买断。"
+   },
+   "pass_b": {
+    "start_king_wen": 14,
+    "start_name": "大有",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 13,
+    "end_name": "同人",
+    "top1_score": 0.488
+   },
+   "system": {
+    "top1_king_wen": 14,
+    "top1_name": "大有",
+    "top1_score": 0.488,
+    "path_start_king_wen": 14,
+    "path_moving_lines": [
+     5,
+     6
+    ],
+    "path_end_king_wen": 43,
+    "path_end_name": "夬"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "对方要价高得离谱，合作担子过重、结构难撑，正合大过；九三、九四两爻动，过刚之栋松动，转为井卦，提示回到根本、以可持续的滋养条件重谈合作。"
+   }
+  },
+  {
+   "id": "F30",
+   "category": "谈判",
+   "scenario": "和房东谈续租，想长租三年锁定租金，房东只想一年一签。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 32,
+    "start_name": "恒",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 62,
+    "end_name": "小过",
+    "rationale": "长久坚持：把三年里双方的收益算清楚，长约对房东也有好处。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "top1_score": 0.411
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.411,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "双方诉求分歧（三年 vs 一年）正合睽卦，二爻五爻由对立转向沟通相应，变兑卦，以坦诚交流求皆大欢喜。"
+   }
+  },
+  {
+   "id": "F31",
+   "category": "谈判",
+   "scenario": "供应商交货延期，合同里有违约金条款，是索赔还是先保供货？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 21,
+    "start_name": "噬嗑",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 27,
+    "end_name": "颐",
+    "rationale": "中间有梗阻：先把货催到手，索赔的事等供货稳了再说。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 10,
+    "end_name": "履",
+    "top1_score": 0.448
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.448,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 12,
+    "path_end_name": "否"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "合同违约金已构成争讼之势，但初爻弱、四爻刚，宜先不硬争而转向整治供货积弊，以保供为上、索赔为辅。"
+   }
+  },
+  {
+   "id": "F32",
+   "category": "谈判",
+   "scenario": "和对手公司谈合并，两边老板都想当老大，谈判卡在控制权上。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 7,
+    "start_name": "师",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "需要纪律和统帅：控制权先定下来，否则合并了也是一盘散沙。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 12,
+    "end_name": "否",
+    "top1_score": 0.53
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.53,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 12,
+    "path_end_name": "否"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 4,
+    "end_name": "蒙",
+    "rationale": "双方争当老大、谈判卡在控制权，正是讼卦争执之象；四爻五爻由争转顺、以柔渗透，故变为巽卦，提示改硬争为柔顺沟通、迂回达成。"
+   }
+  },
+  {
+   "id": "F33",
+   "category": "谈判",
+   "scenario": "租办公室，物业要求押三付三，现金流吃紧，想谈成押一付三。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 48,
+    "start_name": "井",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "养好根本：把现金流的账算给对方看，押金是死的、合作是长的。"
+   },
+   "pass_b": {
+    "start_king_wen": 45,
+    "start_name": "萃",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 16,
+    "end_name": "豫",
+    "top1_score": 0.46
+   },
+   "system": {
+    "top1_king_wen": 45,
+    "top1_name": "萃",
+    "top1_score": 0.46,
+    "path_start_king_wen": 45,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 8,
+    "path_end_name": "比"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "押三付三让现金流被困住，正合困卦；但谈判可柔顺渗透、以诚沟通，四五爻动则困解为兑，靠交流谈成押一付三。"
+   }
+  },
+  {
+   "id": "F34",
+   "category": "谈判",
+   "scenario": "和老东家谈离职补偿，HR 说按最低标准，你想争取多一个月。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 58,
+    "end_name": "兑",
+    "rationale": "到了该拍板的时候：把诉求摆到台面上，别私下磨。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.447
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.447,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "离职补偿分歧已起争端，正合讼卦；二爻退让、四爻不硬争，翻转后成否卦，提示若僵持不下反成闭塞，宜和解退让而非硬争到底。"
+   }
+  },
+  {
+   "id": "F35",
+   "category": "谈判",
+   "scenario": "跨境合作，对方坚持用他们的合同模板，条款对我们不利。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 56,
+    "start_name": "旅",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 52,
+    "end_name": "艮",
+    "rationale": "在外漂泊：条款要一条一条抠，别图省事签了不利的约。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 47,
+    "end_name": "困",
+    "top1_score": 0.48
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.48,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 12,
+    "path_end_name": "否"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "双方合同立场背离、各执一端，正合睽卦；二爻与五爻相应而变，由分歧走向变革，需重新议定条款以破僵局。"
+   }
+  },
+  {
+   "id": "F36",
+   "category": "谈判",
+   "scenario": "和经销商谈独家代理，对方要独家但不承诺销量。",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "互相依靠：独家可以给，但销量要对赌，结盟不能单方面付出。"
+   },
+   "pass_b": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "top1_score": 0.451
+   },
+   "system": {
+    "top1_king_wen": 8,
+    "top1_name": "比",
+    "top1_score": 0.451,
+    "path_start_king_wen": 8,
+    "path_moving_lines": [
+     5,
+     6
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "对方要独家却不承诺销量，双方在权责上明显分歧、易起争端，正合讼卦；初爻与四爻动，由争讼转向涣散，提示若条款谈不拢，合作可能人心离散、需重新凝聚共识。"
+   }
+  },
+  {
+   "id": "F37",
+   "category": "谈判",
+   "scenario": "拆迁谈判，邻居都签了，就剩你一家，开发商天天上门。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 33,
+    "start_name": "遁",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 13,
+    "end_name": "同人",
+    "rationale": "时机不对：先别硬顶，把条件谈到满意再退。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.444
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.444,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "只剩一家被开发商日日上门围困，正合困卦；若四、五爻由刚转柔，从硬撑转为坦诚沟通谈条件，便走向兑卦的喜悦与交流。"
+   }
+  },
+  {
+   "id": "F38",
+   "category": "谈判",
+   "scenario": "和学校谈合作办学，对方要冠名权，你方想保留品牌独立性。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 26,
+    "end_name": "大畜",
+    "rationale": "外表光鲜：冠名可以谈，但内容和品牌底线要守住。"
+   },
+   "pass_b": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 45,
+    "end_name": "萃",
+    "top1_score": 0.479
+   },
+   "system": {
+    "top1_king_wen": 8,
+    "top1_name": "比",
+    "top1_score": 0.479,
+    "path_start_king_wen": 8,
+    "path_moving_lines": [
+     5,
+     6
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "冠名权与品牌独立性正是立场分歧、求同存异之象，二五爻动由睽转革，意味着需就名分与规则重新谈判变革。"
+   }
+  },
+  {
+   "id": "F39",
+   "category": "谈判",
+   "scenario": "劳务纠纷谈判，员工索赔金额超出预期，公司想和解不想上法庭。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 40,
+    "start_name": "解",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 16,
+    "end_name": "豫",
+    "rationale": "困局松动了：和解的窗口在，赶紧谈，别拖到对簿公堂。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 64,
+    "end_name": "未济",
+    "top1_score": 0.535
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.535,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 59,
+    "path_end_name": "涣"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "双方已起争端、索赔超出预期，正合讼卦；初爻退让不争、四爻由争转和，动后成涣，提示以沟通化解、重新凝聚共识。"
+   }
+  },
+  {
+   "id": "F40",
+   "category": "谈判",
+   "scenario": "和投资人谈对赌，业绩达不到要回购股份，创始人觉得风险太大。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 32,
+    "end_name": "恒",
+    "rationale": "担子太重：对赌条款要减到结构撑得住的水平。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.456
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.456,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 29,
+    "end_name": "坎",
+    "rationale": "对赌回购条款让创始人背负过重负担，结构已近撑不住，宜减负；九三、九四两爻动，大过转为井，提示回归根本、守住可持续的根基而非硬扛风险。"
+   }
+  },
+  {
+   "id": "F41",
+   "category": "关系",
+   "scenario": "父母催婚催得紧，每次回家都要吵一架，是顺从还是坚持自己的节奏？",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 42,
+    "end_name": "益",
+    "rationale": "家里各有其位：把自己的打算摆到台面上谈清楚。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 53,
+    "end_name": "渐",
+    "top1_score": 0.54
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.54,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "两代人看法背离、各执一端（睽），但二、五爻动而相应，由分歧转向坦诚交流、以悦相待（兑），催婚之争可化为沟通。"
+   }
+  },
+  {
+   "id": "F42",
+   "category": "关系",
+   "scenario": "最好的朋友借了钱一直不还，开口要怕伤感情，不开口自己难受。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 61,
+    "start_name": "中孚",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "rationale": "信任要靠一件件小事挣回来：先提个小数目试探。"
+   },
+   "pass_b": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 47,
+    "end_name": "困",
+    "top1_score": 0.45
+   },
+   "system": {
+    "top1_king_wen": 28,
+    "top1_name": "大过",
+    "top1_score": 0.45,
+    "path_start_king_wen": 28,
+    "path_moving_lines": [
+     6,
+     1
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "借钱不还、开口怕伤感情、不开口自己难受，正是被情面与债务双重困住的“困”局；宜从九四“来徐徐”的迟疑转为九五“乃徐有说”的坦诚沟通，二爻动则困卦变为兑卦，以坦诚交流化解心结。"
+   }
+  },
+  {
+   "id": "F43",
+   "category": "关系",
+   "scenario": "夫妻两人一个想留在大城市，一个想回老家，僵持半年了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 31,
+    "start_name": "咸",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 48,
+    "end_name": "井",
+    "rationale": "两心相感：先别争地点，谈谈各自到底在怕什么，再把心意摆到台面上。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.422
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.422,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 1,
+    "end_name": "乾",
+    "rationale": "夫妻志向相背、各执一端正是睽卦背离之象；三爻与五爻动，由分歧转向相互理解与共同担当，终成大有之局。"
+   }
+  },
+  {
+   "id": "F44",
+   "category": "关系",
+   "scenario": "孩子沉迷游戏，成绩下滑，管严了吵架、不管又担心。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 4,
+    "start_name": "蒙",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 23,
+    "end_name": "剥",
+    "rationale": "不懂就问：先弄明白孩子在游戏里得到了什么，再谈管教。"
+   },
+   "pass_b": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 47,
+    "end_name": "困",
+    "top1_score": 0.473
+   },
+   "system": {
+    "top1_king_wen": 28,
+    "top1_name": "大过",
+    "top1_score": 0.473,
+    "path_start_king_wen": 28,
+    "path_moving_lines": [
+     6,
+     1
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     1,
+     3
+    ],
+    "end_king_wen": 1,
+    "end_name": "乾",
+    "rationale": "管严就吵架、不管又担心，亲子间已起争执对立（讼），初爻与三爻动则争端由硬碰转向柔顺渗透、以沟通化解（巽）。"
+   }
+  },
+  {
+   "id": "F45",
+   "category": "关系",
+   "scenario": "同事总在背后说你坏话，传到你耳朵里了，是当面对质还是装不知道？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 36,
+    "start_name": "明夷",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 11,
+    "end_name": "泰",
+    "rationale": "环境黑暗：先保全自己，别正面硬碰。"
+   },
+   "pass_b": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 41,
+    "end_name": "损",
+    "top1_score": 0.463
+   },
+   "system": {
+    "top1_king_wen": 38,
+    "top1_name": "睽",
+    "top1_score": 0.463,
+    "path_start_king_wen": 38,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 54,
+    "path_end_name": "归妹"
+   },
+   "llm": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 64,
+    "end_name": "未济",
+    "rationale": "背后流言造成上下不通的闭塞僵局（否），宜先不硬碰、守住自己；从内部化解第二爻的迎合小人、第五爻的沟通阻塞，转向公开坦诚的同人之道。"
+   }
+  },
+  {
+   "id": "F46",
+   "category": "关系",
+   "scenario": "和父母住在一起，老人总插手带孩子的方式，矛盾越来越多。",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": true,
+    "full_agree": true
+   },
+   "flagged": false,
+   "pass_a": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 13,
+    "end_name": "同人",
+    "rationale": "各有其位：把带孩子的分工划清楚，谁负责谁说了算。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 13,
+    "end_name": "同人",
+    "top1_score": 0.48
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.48,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "两代人育儿观念相背、各执一端，正合睽卦背离分歧之象；二爻与五爻相应而皆动，提示从分歧走向沟通与变革，最终需以革卦顺人心、明规矩来更新家庭分工。"
+   }
+  },
+  {
+   "id": "F47",
+   "category": "关系",
+   "scenario": "暗恋的人突然主动找你聊天，聊得很投机，是趁热表白还是再等等？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 31,
+    "start_name": "咸",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 45,
+    "end_name": "萃",
+    "rationale": "两心相感：聊得投机就约出来见面，关系要从线上走到线下。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.508
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.508,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 31,
+    "start_name": "咸",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 15,
+    "end_name": "谦",
+    "rationale": "两心相感正投机，但表白宜缓不宜急，先稳住感应、循序渐进地加深关系，故动咸卦四五爻转升卦。"
+   }
+  },
+  {
+   "id": "F48",
+   "category": "关系",
+   "scenario": "老朋友创业找你投资，项目看起来不错，但你俩对钱的事向来敏感。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 13,
+    "start_name": "同人",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 30,
+    "end_name": "离",
+    "rationale": "公开合作：钱的事先写清楚，亲兄弟也要明算账。"
+   },
+   "pass_b": {
+    "start_king_wen": 63,
+    "start_name": "既济",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.557
+   },
+   "system": {
+    "top1_king_wen": 63,
+    "top1_name": "既济",
+    "top1_score": 0.557,
+    "path_start_king_wen": 63,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 5,
+    "path_end_name": "需"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "朋友合伙投资却对钱敏感，正处“睽”的背离分歧；二爻五爻由猜疑转为中孚诚信，故动成中孚。"
+   }
+  },
+  {
+   "id": "F49",
+   "category": "关系",
+   "scenario": "伴侣总加班到半夜，回家倒头就睡，两人几乎没话说了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 45,
+    "end_name": "萃",
+    "rationale": "互相依靠：先约个固定的时间见面，关系要靠相处养。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.364
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.364,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 64,
+    "end_name": "未济",
+    "rationale": "两人上下不通、几乎无话，正是否卦闭塞之象；二爻与五爻相应却受阻，动则上下易位，转为蛊卦，提示需动手整治积弊、修复关系。"
+   }
+  },
+  {
+   "id": "F50",
+   "category": "关系",
+   "scenario": "邻居装修吵得人睡不着觉，上门说了两次没用，是忍还是投诉？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 64,
+    "end_name": "未济",
+    "rationale": "争执：把物业拉进来做中间人，别自己和邻居硬碰。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.513
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.513,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "上门两次交涉无果，已起争端，正合讼卦；二爻退让、四爻不硬争，动而转否，说明再争下去只会上下不通、陷入僵局，宜先守住边界、另寻调解渠道。"
+   }
+  },
+  {
+   "id": "F51",
+   "category": "关系",
+   "scenario": "大学同学聚会，有人炫耀、有人攀比，去了难受、不去又怕被说不合群。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 15,
+    "start_name": "谦",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 46,
+    "end_name": "升",
+    "rationale": "功成不居：去不去都行，去了低调点、别跟着攀比。"
+   },
+   "pass_b": {
+    "start_king_wen": 13,
+    "start_name": "同人",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "top1_score": 0.564
+   },
+   "system": {
+    "top1_king_wen": 13,
+    "top1_name": "同人",
+    "top1_score": 0.564,
+    "path_start_king_wen": 13,
+    "path_moving_lines": [
+     2,
+     1
+    ],
+    "path_end_king_wen": 44,
+    "path_end_name": "姤"
+   },
+   "llm": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 23,
+    "end_name": "剥",
+    "rationale": "同学聚会炫耀攀比、上下不通令人难受，正是否卦闭塞之象；但若放下比较、主动与真诚的同学沟通，四、五爻由阴转阳，否极泰来，变为泰卦通达顺畅。"
+   }
+  },
+  {
+   "id": "F52",
+   "category": "关系",
+   "scenario": "父母生病住院，兄弟姐妹为谁出钱、谁陪护吵起来了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 45,
+    "start_name": "萃",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 31,
+    "end_name": "咸",
+    "rationale": "人聚到一起：先把分工和出钱的标准定下来，再谈感情。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.443
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.443,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "兄弟姐妹因出钱陪护各执己见、彼此背离，正合睽卦；二五两爻由争转治，翻为蛊卦，提示需整治家庭积弊、明确分工。"
+   }
+  },
+  {
+   "id": "F53",
+   "category": "关系",
+   "scenario": "和伴侣冷战三天了，谁也不先开口，其实两人都想和好。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 58,
+    "start_name": "兑",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 17,
+    "end_name": "随",
+    "rationale": "坦诚沟通：先开口的那个人不是输了，是把关系救回来了。"
+   },
+   "pass_b": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "top1_score": 0.449
+   },
+   "system": {
+    "top1_king_wen": 6,
+    "top1_name": "讼",
+    "top1_score": 0.449,
+    "path_start_king_wen": 6,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 12,
+    "path_end_name": "否"
+   },
+   "llm": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     1,
+     2,
+     3
+    ],
+    "end_king_wen": 1,
+    "end_name": "乾",
+    "rationale": "冷战三天、彼此不开口正是上下不通的否卦僵局，但两人都想和好，说明闭塞已到尽头，初爻动则否极泰来，内卦三爻齐变即转为泰卦通达。"
+   }
+  },
+  {
+   "id": "F54",
+   "category": "关系",
+   "scenario": "职场上被同事抢了功劳，老板还表扬了他，心里憋屈。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 36,
+    "start_name": "明夷",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "rationale": "环境黑暗：先把功劳的证据留好，等合适的时机再说。"
+   },
+   "pass_b": {
+    "start_king_wen": 58,
+    "start_name": "兑",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.493
+   },
+   "system": {
+    "top1_king_wen": 58,
+    "top1_name": "兑",
+    "top1_score": 0.493,
+    "path_start_king_wen": 58,
+    "path_moving_lines": [
+     2
+    ],
+    "path_end_king_wen": 17,
+    "path_end_name": "随"
+   },
+   "llm": {
+    "start_king_wen": 36,
+    "start_name": "明夷",
+    "moving_lines": [
+     2,
+     3
+    ],
+    "end_king_wen": 19,
+    "end_name": "临",
+    "rationale": "功劳被抢、老板偏听，正是光明受损、宜韬光养晦的明夷之局；二爻中正自守、三爻不可急于强出头，翻转后成升卦，提示沉住气、稳步积累，日后自会步步上升。"
+   }
+  },
+  {
+   "id": "F55",
+   "category": "关系",
+   "scenario": "孩子想学钢琴，学费不便宜，不知道能不能坚持下来。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 53,
+    "start_name": "渐",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "rationale": "像大雁一样一步步来：先报个短期的试试，别一下交一年的钱。"
+   },
+   "pass_b": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.445
+   },
+   "system": {
+    "top1_king_wen": 9,
+    "top1_name": "小畜",
+    "top1_score": 0.445,
+    "path_start_king_wen": 9,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 26,
+    "path_end_name": "大畜"
+   },
+   "llm": {
+    "start_king_wen": 4,
+    "start_name": "蒙",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 50,
+    "end_name": "鼎",
+    "rationale": "孩子初学钢琴正处启蒙阶段，但学费不菲、能否坚持存疑，需先观察其兴趣是否真诚，再决定投入，否则易成积弊需整治。"
+   }
+  },
+  {
+   "id": "F56",
+   "category": "关系",
+   "scenario": "老家的房子要不要卖，卖了怕以后回不去，不卖又一直空着。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 52,
+    "start_name": "艮",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 18,
+    "end_name": "蛊",
+    "rationale": "守住边界：先想清楚房子对你到底意味着什么，再决定卖不卖。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.435
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.435,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 46,
+    "end_name": "升",
+    "rationale": "卖与不卖两难如蹇卦寸步难行，但九五居尊位可求助决断，六二爻动提示先稳住根基，动后成升卦，暗示放下空置包袱反而步步上升。"
+   }
+  },
+  {
+   "id": "F57",
+   "category": "关系",
+   "scenario": "朋友圈里有人总爱晒、总爱比，看得人心烦，屏蔽又怕对方发现。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 20,
+    "start_name": "观",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "rationale": "先看清楚：屏蔽是小事，别让别人的晒法左右自己的心情。"
+   },
+   "pass_b": {
+    "start_king_wen": 13,
+    "start_name": "同人",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 30,
+    "end_name": "离",
+    "top1_score": 0.494
+   },
+   "system": {
+    "top1_king_wen": 13,
+    "top1_name": "同人",
+    "top1_score": 0.494,
+    "path_start_king_wen": 13,
+    "path_moving_lines": [
+     2,
+     1
+    ],
+    "path_end_king_wen": 44,
+    "path_end_name": "姤"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 27,
+    "end_name": "颐",
+    "rationale": "朋友圈晒比让人心烦、彼此看法背离，正合睽卦；二爻四爻由阳转阴，睽变节，提示以节制分寸、守住边界来化解分歧。"
+   }
+  },
+  {
+   "id": "F58",
+   "category": "关系",
+   "scenario": "伴侣想养一只狗，你担心没时间照顾，两人意见不一致。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 27,
+    "start_name": "颐",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 41,
+    "end_name": "损",
+    "rationale": "养什么都要算清楚时间账：先商量好分工，再决定养不养。"
+   },
+   "pass_b": {
+    "start_king_wen": 8,
+    "start_name": "比",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 39,
+    "end_name": "蹇",
+    "top1_score": 0.424
+   },
+   "system": {
+    "top1_king_wen": 8,
+    "top1_name": "比",
+    "top1_score": 0.424,
+    "path_start_king_wen": 8,
+    "path_moving_lines": [
+     5,
+     6
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "两人对养狗看法相背，正合睽卦背离分歧；二爻与五爻由阳变阴，睽转为兑，提示放下对立、坦诚交流才能皆大欢喜。"
+   }
+  },
+  {
+   "id": "F59",
+   "category": "关系",
+   "scenario": "多年没联系的高中同学突然找你借钱，说周转一下。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 44,
+    "start_name": "姤",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 6,
+    "end_name": "讼",
+    "rationale": "意外相遇：借可以借，但数额要在自己能承受的范围。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.463
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.463,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 44,
+    "start_name": "姤",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "rationale": "多年不联系的人突然出现，正合“不期而遇”的姤卦；初爻动是意外接触刚起，四爻动是对方有所求而来，翻成需卦，提示此事宜等待观察、不宜贸然借钱。"
+   }
+  },
+  {
+   "id": "F60",
+   "category": "关系",
+   "scenario": "父母想来城里长住，家里住不下，租个房子又怕老人觉得被嫌弃。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 46,
+    "start_name": "升",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "像树一样慢慢长：先短住试试，住得惯再谈长住。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.469
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.469,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 46,
+    "end_name": "升",
+    "rationale": "进退两难如蹇卦，二五爻动则化蹇为升，提示先坦诚沟通、借力化解，再循序渐进安排住处。"
+   }
+  },
+  {
+   "id": "F61",
+   "category": "创意",
+   "scenario": "写小说写到一半卡住了，主角的动机怎么都圆不上，是改大纲还是硬写下去？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     1,
+     5
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "rationale": "内部出了问题：大纲的毛病要从根上改，改到底局面才能重新向上。"
+   },
+   "pass_b": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 6,
+    "end_name": "讼",
+    "top1_score": 0.586
+   },
+   "system": {
+    "top1_king_wen": 12,
+    "top1_name": "否",
+    "top1_score": 0.586,
+    "path_start_king_wen": 12,
+    "path_moving_lines": [
+     3,
+     4
+    ],
+    "path_end_king_wen": 53,
+    "path_end_name": "渐"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 2,
+    "end_name": "坤",
+    "rationale": "主角动机圆不上、进退两难正合蹇卦；卡在第三爻与第五爻，翻转后成豫卦，提示先停下硬写、回头把动机想清楚再动笔。"
+   }
+  },
+  {
+   "id": "F62",
+   "category": "创意",
+   "scenario": "拍短视频，内容用心做但没流量，是坚持风格还是追热点？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 57,
+    "start_name": "巽",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "rationale": "像风一样渗透：热点可以蹭，但风格不能丢，小步推进。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.53
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.53,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 42,
+    "end_name": "益",
+    "rationale": "内容用心却无流量，正处“外表光鲜、内容为本”的贲卦阶段；动三爻与五爻，从修饰转向实质增益，化贲为益，提示在坚持内核的同时调整表达、让内容真正利人利己。"
+   }
+  },
+  {
+   "id": "F63",
+   "category": "创意",
+   "scenario": "设计一个新 logo，客户说“要大气”，又说不出到底想要什么。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 20,
+    "start_name": "观",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 12,
+    "end_name": "否",
+    "rationale": "先看清楚再做决定：多给几个方向让客户选，别猜。"
+   },
+   "pass_b": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "top1_score": 0.49
+   },
+   "system": {
+    "top1_king_wen": 22,
+    "top1_name": "贲",
+    "top1_score": 0.49,
+    "path_start_king_wen": 22,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 36,
+    "path_end_name": "明夷"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "客户说“大气”却说不清，双方认知背离（睽）；二爻与五爻由阳变阴，背离松动、上下重新沟通，转为革卦，需主动变革、把模糊需求讲清楚并重新定调。"
+   }
+  },
+  {
+   "id": "F64",
+   "category": "创意",
+   "scenario": "乐队排练总吵架，吉他手想玩重的，主唱想走流行。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 14,
+    "end_name": "大有",
+    "rationale": "看法不同：先找到一首两边都能接受的歌，再谈风格。"
+   },
+   "pass_b": {
+    "start_king_wen": 40,
+    "start_name": "解",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 54,
+    "end_name": "归妹",
+    "top1_score": 0.43
+   },
+   "system": {
+    "top1_king_wen": 40,
+    "top1_name": "解",
+    "top1_score": 0.43,
+    "path_start_king_wen": 40,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 47,
+    "path_end_name": "困"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "吉他手要重、主唱要流行，正是“看法不同、各走各的”睽卦；二爻与五爻由对立转向相感相通，化背离为坦诚交流，故变为兑卦。"
+   }
+  },
+  {
+   "id": "F65",
+   "category": "创意",
+   "scenario": "做一个播客，第一期录了三遍都不满意，是继续磨还是先发出来？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 50,
+    "start_name": "鼎",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 56,
+    "end_name": "旅",
+    "rationale": "新局面立住了：先发出来，听众的反馈比自己磨更有用。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.501
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.501,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 3,
+    "start_name": "屯",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 49,
+    "end_name": "革",
+    "rationale": "第一期反复录三遍仍不满意，正是初生艰难、万事开头难的屯卦；第三爻动则放下完美执念、第四爻动则顺势推出，翻转为随卦，先发出来再随反馈迭代。"
+   }
+  },
+  {
+   "id": "F66",
+   "category": "创意",
+   "scenario": "画了一幅画，自己很满意但没人看得懂，是改还是坚持？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 30,
+    "start_name": "离",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 21,
+    "end_name": "噬嗑",
+    "rationale": "像火一样明亮：作品要让人看得见光，先让懂的人看懂。"
+   },
+   "pass_b": {
+    "start_king_wen": 20,
+    "start_name": "观",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 12,
+    "end_name": "否",
+    "top1_score": 0.554
+   },
+   "system": {
+    "top1_king_wen": 20,
+    "top1_name": "观",
+    "top1_score": 0.554,
+    "path_start_king_wen": 20,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     3,
+     6
+    ],
+    "end_king_wen": 24,
+    "end_name": "复",
+    "rationale": "画作自赏却无人读懂，正处“装饰与体面”之贲卦，内容与外表尚未相得；三爻动则去饰返质，上爻动则白贲归真，终成复卦，宜回归本心、重新出发而非一味改从他人。"
+   }
+  },
+  {
+   "id": "F67",
+   "category": "创意",
+   "scenario": "想做一个没人做过的产品，但不知道有没有市场，是先做出来还是先调研？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 1,
+    "start_name": "乾",
+    "moving_lines": [
+     1,
+     2
+    ],
+    "end_king_wen": 33,
+    "end_name": "遁",
+    "rationale": "带头做事：先动起来做个最小的版本，机会和同伴会在路上出现。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.504
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.504,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 3,
+    "start_name": "屯",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 58,
+    "end_name": "兑",
+    "rationale": "新产品无人做过、市场未知，正处万事开头难的屯卦；二爻动则暂缓强攻、四爻动则先做调研求证，翻转后成节卦，提示先定分寸与验证节奏再投入。"
+   }
+  },
+  {
+   "id": "F68",
+   "category": "创意",
+   "scenario": "写歌写不出副歌，旋律在脑子里转了三天，就是落不下来。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 29,
+    "start_name": "坎",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 47,
+    "end_name": "困",
+    "rationale": "一坑接一坑：先放一放，去走走路，旋律会自己落下来。"
+   },
+   "pass_b": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 33,
+    "end_name": "遁",
+    "top1_score": 0.48
+   },
+   "system": {
+    "top1_king_wen": 12,
+    "top1_name": "否",
+    "top1_score": 0.48,
+    "path_start_king_wen": 12,
+    "path_moving_lines": [
+     3,
+     4
+    ],
+    "path_end_king_wen": 53,
+    "path_end_name": "渐"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 62,
+    "end_name": "小过",
+    "rationale": "副歌卡住、进退两难正像蹇卦寸步难行；动四、五爻由阻转通，化蹇为泰，提示换角度、找人帮衬后局面打开。"
+   }
+  },
+  {
+   "id": "F69",
+   "category": "创意",
+   "scenario": "拍纪录片，主角突然反悔不让拍了，前期投入全白费。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 28,
+    "end_name": "大过",
+    "rationale": "被困住了：找个中间人再谈一次，实在不行就换主角。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.438
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.438,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "主角反悔、前期投入白费，正处困顿受阻之境；困卦四五爻动，由困转需，宜退守等待、养精蓄锐，待时机再动。"
+   }
+  },
+  {
+   "id": "F70",
+   "category": "创意",
+   "scenario": "做游戏，玩法很新颖但测试玩家都说看不懂规则。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 4,
+    "start_name": "蒙",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 59,
+    "end_name": "涣",
+    "rationale": "不懂就问：让玩家告诉你哪里不懂，规则要从玩家的困惑里改。"
+   },
+   "pass_b": {
+    "start_king_wen": 20,
+    "start_name": "观",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 12,
+    "end_name": "否",
+    "top1_score": 0.492
+   },
+   "system": {
+    "top1_king_wen": 20,
+    "top1_name": "观",
+    "top1_score": 0.492,
+    "path_start_king_wen": 20,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 4,
+    "start_name": "蒙",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 35,
+    "end_name": "晋",
+    "rationale": "玩家看不懂规则正是“蒙”卦启蒙未通之象，需从内部讲解（二爻）与对外展示（四爻）同时调整，翻转后成“颐”，提示要靠清晰的表达与滋养式引导来养正玩家认知。"
+   }
+  },
+  {
+   "id": "F71",
+   "category": "创意",
+   "scenario": "写剧本，投资人要求加一个流量明星，角色根本不适合。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "rationale": "外表光鲜：明星可以加，但角色和故事不能为明星让路。"
+   },
+   "pass_b": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 1,
+    "end_name": "乾",
+    "top1_score": 0.441
+   },
+   "system": {
+    "top1_king_wen": 9,
+    "top1_name": "小畜",
+    "top1_score": 0.441,
+    "path_start_king_wen": 9,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 26,
+    "path_end_name": "大畜"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 27,
+    "end_name": "颐",
+    "rationale": "创作方与投资方对角色定位看法相左、各执一端，正合睽卦背离分歧之象；二爻与四爻动，由分歧转向节制分寸，提示在坚持剧本底线的前提下协商折中、把握让步的度。"
+   }
+  },
+  {
+   "id": "F72",
+   "category": "创意",
+   "scenario": "摄影展的照片选好了，场地突然说档期给了别人。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 24,
+    "start_name": "复",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 19,
+    "end_name": "临",
+    "rationale": "低谷反弹：场地没了就换个地方，作品在、展览就能重新开始。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.405
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.405,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 62,
+    "end_name": "小过",
+    "rationale": "场地突失如陷蹇难，但九五居尊得助、六四退守待援，动而化泰，困局可通。"
+   }
+  },
+  {
+   "id": "F73",
+   "category": "创意",
+   "scenario": "做手工品牌，订单多了做不过来，是涨价还是找人帮忙？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "rationale": "小有收获：先涨一点价把量压下来，别急着扩招。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.456
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.456,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 39,
+    "end_name": "蹇",
+    "rationale": "订单多到做不过来，担子已超出结构承受力，正处大过之时；二爻四爻动，提示减负与调整节奏，转向节卦的分寸与节制，先定边界再谈涨价或加人。"
+   }
+  },
+  {
+   "id": "F74",
+   "category": "创意",
+   "scenario": "写公众号，追热点涨粉快，但写得心累，不追又怕掉粉。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 60,
+    "start_name": "节",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "rationale": "凡事有度：定个节奏，热点一周最多追一次，剩下的写自己想写的。"
+   },
+   "pass_b": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.552
+   },
+   "system": {
+    "top1_king_wen": 9,
+    "top1_name": "小畜",
+    "top1_score": 0.552,
+    "path_start_king_wen": 9,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 26,
+    "path_end_name": "大畜"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "追热点心累、不追怕掉粉，正是被流量与更新节奏困住；宜从九四“来徐徐”的勉强中抽身，转向九五的悦而交流，把表达从讨好算法改为真诚对话，困局便松动为兑的喜悦沟通。"
+   }
+  },
+  {
+   "id": "F75",
+   "category": "创意",
+   "scenario": "编舞编到一半，音乐换了版权方不让用了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": true,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 49,
+    "start_name": "革",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "rationale": "旧的要改：音乐换了就换个思路编，变革要顺着音乐走。"
+   },
+   "pass_b": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 52,
+    "end_name": "艮",
+    "top1_score": 0.416
+   },
+   "system": {
+    "top1_king_wen": 18,
+    "top1_name": "蛊",
+    "top1_score": 0.416,
+    "path_start_king_wen": 18,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 50,
+    "path_end_name": "鼎"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "音乐版权突然被撤，编舞卡在半途，正处困顿受阻之境；但九五、九四两爻由阳转阴，困局松动，转向兑卦的坦诚沟通与重新协商，以交流化解版权难题。"
+   }
+  },
+  {
+   "id": "F76",
+   "category": "创意",
+   "scenario": "做播客想请个大咖，对方一直不回消息，是继续约还是放弃？",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "rationale": "时机未到：先做几期好的内容出来，再去约更有底气。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.477
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.477,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     3,
+     6
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "对方不回如陷险中，宜耐心等待时机（需），但久等无果则须公开决断、不再纠缠（夬）。"
+   }
+  },
+  {
+   "id": "F77",
+   "category": "创意",
+   "scenario": "小说里两个角色的感情线写崩了，读者都在骂。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 31,
+    "start_name": "咸",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 62,
+    "end_name": "小过",
+    "rationale": "两心相感：感情线要从人物的真实动机里长出来，别硬拗。"
+   },
+   "pass_b": {
+    "start_king_wen": 40,
+    "start_name": "解",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 54,
+    "end_name": "归妹",
+    "top1_score": 0.494
+   },
+   "system": {
+    "top1_king_wen": 40,
+    "top1_name": "解",
+    "top1_score": 0.494,
+    "path_start_king_wen": 40,
+    "path_moving_lines": [
+     5
+    ],
+    "path_end_king_wen": 47,
+    "path_end_name": "困"
+   },
+   "llm": {
+    "start_king_wen": 38,
+    "start_name": "睽",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 25,
+    "end_name": "无妄",
+    "rationale": "角色感情线写崩、读者骂声一片，正是上下看法背离、各执一词的睽卦；二爻五爻动，由背离转向整治积弊的蛊卦，须回头修补人设与关系逻辑。"
+   }
+  },
+  {
+   "id": "F78",
+   "category": "创意",
+   "scenario": "做独立游戏，美术风格定了三版都不满意，时间却不多了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 21,
+    "start_name": "噬嗑",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 38,
+    "end_name": "睽",
+    "rationale": "中间有梗阻：定个 deadline，选最接近的那版，别无限改下去。"
+   },
+   "pass_b": {
+    "start_king_wen": 12,
+    "start_name": "否",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 33,
+    "end_name": "遁",
+    "top1_score": 0.486
+   },
+   "system": {
+    "top1_king_wen": 12,
+    "top1_name": "否",
+    "top1_score": 0.486,
+    "path_start_king_wen": 12,
+    "path_moving_lines": [
+     3,
+     4
+    ],
+    "path_end_king_wen": 53,
+    "path_end_name": "渐"
+   },
+   "llm": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 21,
+    "end_name": "噬嗑",
+    "rationale": "美术反复改版却只停留在表面修饰，正合贲卦“外表光鲜、内容为本”之象；三爻四爻动则从文饰转向颐养根本，提示该停下表面折腾、回到核心美术方向与资源节制上。"
+   }
+  },
+  {
+   "id": "F79",
+   "category": "创意",
+   "scenario": "拍 vlog，剪出来的片子自己看着都困，是重剪还是换题材？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 16,
+    "start_name": "豫",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 62,
+    "end_name": "小过",
+    "rationale": "心情松快：先想清楚观众为什么会困，再动手重剪。"
+   },
+   "pass_b": {
+    "start_king_wen": 43,
+    "start_name": "夬",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.472
+   },
+   "system": {
+    "top1_king_wen": 43,
+    "top1_name": "夬",
+    "top1_score": 0.472,
+    "path_start_king_wen": 43,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 22,
+    "start_name": "贲",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 21,
+    "end_name": "噬嗑",
+    "rationale": "片子只有表面包装而内容空洞，像贲卦虚饰无本；动三、四爻由饰转实，变为颐卦，提示应回到“靠什么养内容”的根本，先换题材、重立内核而非只重剪。"
+   }
+  },
+  {
+   "id": "F80",
+   "category": "创意",
+   "scenario": "写诗投稿被退了三次，编辑说“感觉不对”，又不说哪里不对。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 52,
+    "start_name": "艮",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 23,
+    "end_name": "剥",
+    "rationale": "该停就停：先放一阵子，回头再读自己的诗，问题会自己冒出来。"
+   },
+   "pass_b": {
+    "start_king_wen": 54,
+    "start_name": "归妹",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 38,
+    "end_name": "睽",
+    "top1_score": 0.441
+   },
+   "system": {
+    "top1_king_wen": 54,
+    "top1_name": "归妹",
+    "top1_score": 0.441,
+    "path_start_king_wen": 54,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 38,
+    "path_end_name": "睽"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     4,
+     5
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "三次被退、编辑只说“感觉不对”而不点明，正是困于言路不通、有劲使不出的困卦；若能从九四的迟疑被动转为九五的主动沟通、以诚求教，则困解为兑，以坦诚交流换来编辑的真实反馈。"
+   }
+  },
+  {
+   "id": "F81",
+   "category": "日常",
+   "scenario": "连续熬夜一周，身体开始抗议，但手头的事一件都没做完。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 27,
+    "start_name": "颐",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 37,
+    "end_name": "家人",
+    "rationale": "靠什么养自己：先睡一觉把根本养好，事情可以晚一天做。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 43,
+    "end_name": "夬",
+    "top1_score": 0.449
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.449,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     1,
+     4,
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "rationale": "连续熬夜、事情做不完，正是负担过重、结构将倾的“大过”；初爻过劳之始、四爻承重之柱、上爻过极之危，三爻皆动，翻成“井”卦，提示回到根本、养好身体这个取之不竭的源头。"
+   }
+  },
+  {
+   "id": "F82",
+   "category": "日常",
+   "scenario": "减肥减了两个月，体重一点没动，是方法错了还是坚持得不够？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 32,
+    "start_name": "恒",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 40,
+    "end_name": "解",
+    "rationale": "长久坚持：先检查方法对不对，节奏对了才谈坚持。"
+   },
+   "pass_b": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 32,
+    "end_name": "恒",
+    "top1_score": 0.578
+   },
+   "system": {
+    "top1_king_wen": 28,
+    "top1_name": "大过",
+    "top1_score": 0.578,
+    "path_start_king_wen": 28,
+    "path_moving_lines": [
+     6,
+     1
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 32,
+    "start_name": "恒",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 7,
+    "end_name": "师",
+    "rationale": "两个月体重不动，说明方法本身未必错，而是节奏与坚持的稳定性出了问题；恒卦讲长久稳定的节奏，动在三、四爻则提示中途调整与持续积累，转为需卦，宜耐心等待、养精蓄锐，而非急于换法或硬撑。"
+   }
+  },
+  {
+   "id": "F83",
+   "category": "日常",
+   "scenario": "手机用了三年，电池不行了，换电池还是换新机？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 27,
+    "end_name": "颐",
+    "rationale": "先舍后得：换电池是小钱，换新机是大钱，先算清楚再决定。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 48,
+    "end_name": "井",
+    "top1_score": 0.489
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.489,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 53,
+    "end_name": "渐",
+    "rationale": "用了三年的手机电池衰败，正是“蛊”所象征的积弊待治；九二动而治弊、六五动而求教决断，二爻齐变即由蛊卦转为蒙卦，对应在换电池与换新机之间先弄清需求再作决定。"
+   }
+  },
+  {
+   "id": "F84",
+   "category": "日常",
+   "scenario": "周末想出去玩，但家里一堆事没做完，去还是不去？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 52,
+    "start_name": "艮",
+    "moving_lines": [
+     4
+    ],
+    "end_king_wen": 56,
+    "end_name": "旅",
+    "rationale": "该停就停：家里的事做不完就先停半天，出去透透气回来再做。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.472
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.472,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     3,
+     6
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "想出门却被家事拖住，正是“需”待时机；九三逼近险境、上六入于穴，动则转为夬，提示先决断处理完家事再出行。"
+   }
+  },
+  {
+   "id": "F85",
+   "category": "日常",
+   "scenario": "存了点钱，是先还房贷还是留着应急？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 60,
+    "start_name": "节",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 3,
+    "end_name": "屯",
+    "rationale": "凡事有度：留够应急的钱，剩下的再还房贷。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.529
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.529,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 9,
+    "start_name": "小畜",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 10,
+    "end_name": "履",
+    "rationale": "手头小有积蓄但力量尚不足，正处积累阶段；三爻动则需克制冲动、四爻动则近泰，提示先留应急、稳中求通，不宜急于大额还贷。"
+   }
+  },
+  {
+   "id": "F86",
+   "category": "日常",
+   "scenario": "孩子发烧 38 度，是去医院还是在家观察？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 29,
+    "start_name": "坎",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 48,
+    "end_name": "井",
+    "rationale": "一坑接一坑：先看精神状态，精神好就在家观察，精神差马上送医院。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.419
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.419,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 49,
+    "end_name": "革",
+    "rationale": "孩子发烧38度尚属可观察范围，最像“需”卦等待时机、养精蓄锐；但二爻与四爻动，提示需从“等待”转为“决断”，若观察中出现变化就要果断就医，故变为“革”卦。"
+   }
+  },
+  {
+   "id": "F87",
+   "category": "日常",
+   "scenario": "老家房子漏水，修一次要不少钱，不修又越漏越厉害。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 56,
+    "end_name": "旅",
+    "rationale": "内部出了问题：漏水不修只会越拖越贵，先从基层动手，再把整顿做到底。"
+   },
+   "pass_b": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     1,
+     3
+    ],
+    "end_king_wen": 18,
+    "end_name": "蛊",
+    "top1_score": 0.525
+   },
+   "system": {
+    "top1_king_wen": 41,
+    "top1_name": "损",
+    "top1_score": 0.525,
+    "path_start_king_wen": 41,
+    "path_moving_lines": [
+     2,
+     6
+    ],
+    "path_end_king_wen": 24,
+    "path_end_name": "复"
+   },
+   "llm": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     2,
+     3
+    ],
+    "end_king_wen": 23,
+    "end_name": "剥",
+    "rationale": "老屋漏水是积弊已深的“蛊”象，须动手整治；但二爻、三爻动而转“艮”，提示先止住渗漏、量力而行，不宜一味硬修到底。"
+   }
+  },
+  {
+   "id": "F88",
+   "category": "日常",
+   "scenario": "每天通勤两小时，累得没时间陪家人，是换工作还是搬家？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 56,
+    "start_name": "旅",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 33,
+    "end_name": "遁",
+    "rationale": "在外漂泊：先算清楚换工作和搬家各自的代价，再选。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.523
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.523,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "rationale": "通勤两小时的重担已压得结构难撑，如大过之栋梁弯曲；初爻与四爻动，显示需从根基与行动上减负调整，否则将陷入困顿。"
+   }
+  },
+  {
+   "id": "F89",
+   "category": "日常",
+   "scenario": "想学一门新手艺，报了课又总没时间去，钱白花了。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 53,
+    "start_name": "渐",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "像大雁一样一步步来：先每周固定一个小时，能坚持再加量。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.491
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.491,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 4,
+    "start_name": "蒙",
+    "moving_lines": [
+     3,
+     4
+    ],
+    "end_king_wen": 50,
+    "end_name": "鼎",
+    "rationale": "报了课却总没时间去，正处启蒙求学之困，需整治拖延积弊、动手调整安排，方能由蒙转蛊。"
+   }
+  },
+  {
+   "id": "F90",
+   "category": "日常",
+   "scenario": "家里的旧东西堆满了阳台，扔舍不得、留着占地方。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 61,
+    "end_name": "中孚",
+    "rationale": "减掉多余的才能轻装上路：先扔掉一年没用过的。"
+   },
+   "pass_b": {
+    "start_king_wen": 37,
+    "start_name": "家人",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.453
+   },
+   "system": {
+    "top1_king_wen": 37,
+    "top1_name": "家人",
+    "top1_score": 0.453,
+    "path_start_king_wen": 37,
+    "path_moving_lines": [
+     4
+    ],
+    "path_end_king_wen": 13,
+    "path_end_name": "同人"
+   },
+   "llm": {
+    "start_king_wen": 18,
+    "start_name": "蛊",
+    "moving_lines": [
+     1,
+     2
+    ],
+    "end_king_wen": 22,
+    "end_name": "贲",
+    "rationale": "旧物堆积成积弊，正需整治；初爻与二爻动，由蛊转升，先动手清理根基，再逐步腾出空间。"
+   }
+  },
+  {
+   "id": "F91",
+   "category": "日常",
+   "scenario": "体检报告出来几项指标偏高，医生说注意饮食，但应酬推不掉。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 27,
+    "start_name": "颐",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 42,
+    "end_name": "益",
+    "rationale": "言语和饮食都要节制：应酬能推就推，推不掉就少吃多动。"
+   },
+   "pass_b": {
+    "start_king_wen": 28,
+    "start_name": "大过",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 31,
+    "end_name": "咸",
+    "top1_score": 0.517
+   },
+   "system": {
+    "top1_king_wen": 28,
+    "top1_name": "大过",
+    "top1_score": 0.517,
+    "path_start_king_wen": 28,
+    "path_moving_lines": [
+     6,
+     1
+    ],
+    "path_end_king_wen": 1,
+    "path_end_name": "乾"
+   },
+   "llm": {
+    "start_king_wen": 27,
+    "start_name": "颐",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 35,
+    "end_name": "晋",
+    "rationale": "体检指标偏高、应酬难推，正处“靠什么养自己”的颐养关口；初爻贪口腹之欲、四爻应酬纠缠，动则根基被剥，转为剥卦，提示节制饮食、减少应酬，否则健康根基渐损。"
+   }
+  },
+  {
+   "id": "F92",
+   "category": "日常",
+   "scenario": "下雨天开车上班，路上堵得一动不动，是等还是绕路？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 48,
+    "end_name": "井",
+    "rationale": "走不动了：看看导航有没有小路，别在一条路上死等。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     1,
+     2
+    ],
+    "end_king_wen": 39,
+    "end_name": "蹇",
+    "top1_score": 0.599
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.599,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 39,
+    "start_name": "蹇",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 46,
+    "end_name": "升",
+    "rationale": "堵死寸步难行正合蹇卦；二爻五爻由阻转通，化蹇为升，绕路反而步步上行。"
+   }
+  },
+  {
+   "id": "F93",
+   "category": "日常",
+   "scenario": "想给父母买个礼物，买贵的怕他们心疼，买便宜的又怕不够好。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 15,
+    "start_name": "谦",
+    "moving_lines": [
+     3
+    ],
+    "end_king_wen": 2,
+    "end_name": "坤",
+    "rationale": "功成不居：礼物贵贱不重要，合心意、让父母安心才重要。"
+   },
+   "pass_b": {
+    "start_king_wen": 54,
+    "start_name": "归妹",
+    "moving_lines": [
+     1,
+     2
+    ],
+    "end_king_wen": 16,
+    "end_name": "豫",
+    "top1_score": 0.411
+   },
+   "system": {
+    "top1_king_wen": 54,
+    "top1_name": "归妹",
+    "top1_score": 0.411,
+    "path_start_king_wen": 54,
+    "path_moving_lines": [
+     3
+    ],
+    "path_end_king_wen": 34,
+    "path_end_name": "大壮"
+   },
+   "llm": {
+    "start_king_wen": 60,
+    "start_name": "节",
+    "moving_lines": [
+     2,
+     5
+    ],
+    "end_king_wen": 24,
+    "end_name": "复",
+    "rationale": "买贵怕心疼、买便宜怕不够好，正处在“节制与分寸”的两难中；二爻与五爻动，由节制转为兑悦，提示以坦诚沟通化解分寸焦虑，让父母真心欢喜。"
+   }
+  },
+  {
+   "id": "F94",
+   "category": "日常",
+   "scenario": "每天刷手机到半夜，第二天起不来，想戒又戒不掉。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 52,
+    "start_name": "艮",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 22,
+    "end_name": "贲",
+    "rationale": "该停就停：先定个睡觉前一小时不碰手机的规矩。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 63,
+    "end_name": "既济",
+    "top1_score": 0.495
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.495,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 29,
+    "start_name": "坎",
+    "moving_lines": [
+     3,
+     6
+    ],
+    "end_king_wen": 57,
+    "end_name": "巽",
+    "rationale": "刷手机到半夜、想戒戒不掉，是陷在重复的坑里一坎接一坎；动三爻与上爻，由坎转巽，说明要靠柔顺渗透的日常习惯慢慢化解，而非硬戒。"
+   }
+  },
+  {
+   "id": "F95",
+   "category": "日常",
+   "scenario": "菜市场买菜，总觉得被缺斤少两，是换个摊还是当面说？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 61,
+    "start_name": "中孚",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 42,
+    "end_name": "益",
+    "rationale": "心中有诚信：先当面客气地提一次，再有下次就换摊。"
+   },
+   "pass_b": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     4,
+     6
+    ],
+    "end_king_wen": 54,
+    "end_name": "归妹",
+    "top1_score": 0.485
+   },
+   "system": {
+    "top1_king_wen": 41,
+    "top1_name": "损",
+    "top1_score": 0.485,
+    "path_start_king_wen": 41,
+    "path_moving_lines": [
+     2,
+     6
+    ],
+    "path_end_king_wen": 24,
+    "path_end_name": "复"
+   },
+   "llm": {
+    "start_king_wen": 6,
+    "start_name": "讼",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "rationale": "心里已起争执、疑心被欺，正处讼卦；二爻退让不争、四爻改从守正，争讼化为否塞，不如先换摊避争、守住自己。"
+   }
+  },
+  {
+   "id": "F96",
+   "category": "日常",
+   "scenario": "冬天到了，暖气还没来，家里冷得睡不着，是买电暖器还是忍几天？",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 11,
+    "end_name": "泰",
+    "rationale": "时机未到：先买个小的顶几天，暖气来了就不用了。"
+   },
+   "pass_b": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 9,
+    "end_name": "小畜",
+    "top1_score": 0.495
+   },
+   "system": {
+    "top1_king_wen": 5,
+    "top1_name": "需",
+    "top1_score": 0.495,
+    "path_start_king_wen": 5,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 9,
+    "path_end_name": "小畜"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2,
+     3
+    ],
+    "end_king_wen": 3,
+    "end_name": "屯",
+    "rationale": "眼下暖气未到、寒夜难眠，正处“等待时机”的需卦；但冷得睡不着已到忍耐边界，二爻三爻动而转节卦，提示与其硬忍不如有分寸地临时取暖、节制用电，等暖气来再收手。"
+   }
+  },
+  {
+   "id": "F97",
+   "category": "日常",
+   "scenario": "朋友推荐了一只股票，说肯定涨，买还是不买？",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 25,
+    "start_name": "无妄",
+    "moving_lines": [
+     1,
+     3
+    ],
+    "end_king_wen": 33,
+    "end_name": "遁",
+    "rationale": "不妄动：按本分做事，别听风就是雨，先想清楚自己能不能承受。"
+   },
+   "pass_b": {
+    "start_king_wen": 42,
+    "start_name": "益",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 20,
+    "end_name": "观",
+    "top1_score": 0.498
+   },
+   "system": {
+    "top1_king_wen": 42,
+    "top1_name": "益",
+    "top1_score": 0.498,
+    "path_start_king_wen": 42,
+    "path_moving_lines": [
+     1,
+     5
+    ],
+    "path_end_king_wen": 23,
+    "path_end_name": "剥"
+   },
+   "llm": {
+    "start_king_wen": 5,
+    "start_name": "需",
+    "moving_lines": [
+     2,
+     4
+    ],
+    "end_king_wen": 49,
+    "end_name": "革",
+    "rationale": "朋友推荐即外部诱惑，自己未明真相，宜如“需”卦等待时机、不轻举妄动；二爻动则离险就安、四爻动则出险入顺，翻转后成“泰”，提示耐心观察后局面自会明朗，而非仓促买入。"
+   }
+  },
+  {
+   "id": "F98",
+   "category": "日常",
+   "scenario": "家里养的花总养不活，换了几盆还是死。",
+   "agreement": {
+    "start_agree": true,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 48,
+    "start_name": "井",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 39,
+    "end_name": "蹇",
+    "rationale": "养好根本：先弄明白是水多了还是光少了，再谈养花。"
+   },
+   "pass_b": {
+    "start_king_wen": 48,
+    "start_name": "井",
+    "moving_lines": [
+     1
+    ],
+    "end_king_wen": 5,
+    "end_name": "需",
+    "top1_score": 0.431
+   },
+   "system": {
+    "top1_king_wen": 48,
+    "top1_name": "井",
+    "top1_score": 0.431,
+    "path_start_king_wen": 48,
+    "path_moving_lines": [
+     6
+    ],
+    "path_end_king_wen": 57,
+    "path_end_name": "巽"
+   },
+   "llm": {
+    "start_king_wen": 47,
+    "start_name": "困",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 60,
+    "end_name": "节",
+    "rationale": "反复换盆仍死，如陷困境；初爻受困、四爻受阻，动则入坎，提示先停下找根本原因而非继续换盆。"
+   }
+  },
+  {
+   "id": "F99",
+   "category": "日常",
+   "scenario": "想跑步锻炼，跑两天就放弃了，每次都是这样。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 32,
+    "start_name": "恒",
+    "moving_lines": [
+     5
+    ],
+    "end_king_wen": 28,
+    "end_name": "大过",
+    "rationale": "长久坚持：别定每天五公里，先定每天十分钟。"
+   },
+   "pass_b": {
+    "start_king_wen": 41,
+    "start_name": "损",
+    "moving_lines": [
+     2
+    ],
+    "end_king_wen": 27,
+    "end_name": "颐",
+    "top1_score": 0.486
+   },
+   "system": {
+    "top1_king_wen": 41,
+    "top1_name": "损",
+    "top1_score": 0.486,
+    "path_start_king_wen": 41,
+    "path_moving_lines": [
+     2,
+     6
+    ],
+    "path_end_king_wen": 24,
+    "path_end_name": "复"
+   },
+   "llm": {
+    "start_king_wen": 3,
+    "start_name": "屯",
+    "moving_lines": [
+     1,
+     4
+    ],
+    "end_king_wen": 45,
+    "end_name": "萃",
+    "rationale": "每次起步都卡在开头难（屯），初爻想动却根基不稳、四爻又犹豫求合，翻转后成随卦，提示与其硬撑不如顺势找个能带动自己的节奏或同伴。"
+   }
+  },
+  {
+   "id": "F100",
+   "category": "日常",
+   "scenario": "年底了，想给自己定个新年目标，定高了怕完不成，定低了又觉得没劲。",
+   "agreement": {
+    "start_agree": false,
+    "lines_agree": false,
+    "full_agree": false
+   },
+   "flagged": true,
+   "pass_a": {
+    "start_king_wen": 26,
+    "start_name": "大畜",
+    "moving_lines": [
+     2,
+     6
+    ],
+    "end_king_wen": 36,
+    "end_name": "明夷",
+    "rationale": "积蓄力量：目标定在踮脚够得着的地方，蓄满了再往上加。"
+   },
+   "pass_b": {
+    "start_king_wen": 16,
+    "start_name": "豫",
+    "moving_lines": [
+     6
+    ],
+    "end_king_wen": 35,
+    "end_name": "晋",
+    "top1_score": 0.571
+   },
+   "system": {
+    "top1_king_wen": 16,
+    "top1_name": "豫",
+    "top1_score": 0.571,
+    "path_start_king_wen": 16,
+    "path_moving_lines": [
+     5,
+     4,
+     3
+    ],
+    "path_end_king_wen": 39,
+    "path_end_name": "蹇"
+   },
+   "llm": {
+    "start_king_wen": 60,
+    "start_name": "节",
+    "moving_lines": [
+     3,
+     5
+    ],
+    "end_king_wen": 11,
+    "end_name": "泰",
+    "rationale": "定目标正处在“节制与分寸”的关口，怕高怕低就是不知如何设限；三爻与五爻动，提醒既要有节度又要守中道，翻成需卦，说明先耐心等待、养精蓄锐再定合适目标。"
+   }
+  }
+ ],
+ "meta": {
+  "n": 100,
+  "sources": "exam_100.json (pass A/B), exam_report_100.json (system), baseline_100.json (LLM deepseek-chat); hexagram names/readings from taiji_field/documents.py + data.py"
+ }
+}
