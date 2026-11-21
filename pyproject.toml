@@ -12,7 +12,9 @@ authors = [{ name = "Sun Wen" }]
 requires-python = ">=3.10"
 dependencies = [
     "networkx",
+    "numpy",
     "matplotlib",
+    "sentence-transformers",
     "zhouyi-6bit",
 ]
 

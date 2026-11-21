@@ -29,6 +29,16 @@ tested, and visualized. See [docs/phase0-notes.md](docs/phase0-notes.md) for
 three hand-walked everyday scenarios and an honest assessment of where the
 walk feels right and where it feels forced.
 
+**Phase 1 — grounding and resonance (done).** A situation is encoded with
+`BAAI/bge-small-zh-v1.5` and matched to its most resonant hexagram by cosine
+similarity; the match is expanded 1–3 steps along bian (changing-line) edges
+and explained with a template interpreter. The exam paper
+([docs/exam-v1.md](docs/exam-v1.md), 30 scenarios) and its harness measure
+the pipeline against draft labels — the labels are unreviewed, the LLM
+baseline is not yet built, and the explanations are templates, not
+understanding. See [docs/phase1-notes.md](docs/phase1-notes.md) for the
+honest limits and the exam score.
+
 No LLM calls anywhere in this codebase — that is the point.
 
 ## Install
@@ -37,6 +47,12 @@ No LLM calls anywhere in this codebase — that is the point.
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 ```
+
+Note: `sentence-transformers` pulls in PyTorch, and PyPI's default torch
+wheel bundles CUDA — expect a multi-GB download on first install even
+though everything here runs on CPU. (A CPU-only torch from the PyTorch
+index is much smaller; install that first if you prefer, then
+`pip install -e ".[dev]"` will reuse it.)
 
 Hexagram data comes from the [`zhouyi-6bit`](https://pypi.org/project/zhouyi-6bit/)
 package (MIT), loaded from the installed package at runtime; a vendored copy
@@ -52,6 +68,13 @@ pytest
 python -m taiji_field.demo 24
 python -m taiji_field.demo ䷗
 python -m taiji_field.demo "Fu"
+
+# Phase 1: resonate a situation to a hexagram, expand 1-3 bian steps,
+# and explain the path (template-based)
+python -m taiji_field.reasoning "两个部门为项目归属僵持了三周，谁也不让步"
+
+# Phase 1: run the 30-scenario exam paper, write the JSON report
+python -m taiji_field.exam
 
 # Re-render the graph visualization
 python -m taiji_field.viz

@@ -1,0 +1,546 @@
+{
+  "version": "v1",
+  "note": "DRAFT labels. Each proposed evolution was proposed by the author and is awaiting Wen's review; it is NOT ground truth. End hexagrams are computed from start + moving lines, never hand-typed.",
+  "scenarios": [
+    {
+      "id": "E01",
+      "category": "工作决策",
+      "scenario": "手里有个很好的新机会，薪水更高、平台更大，但现在的工作也还算稳定，团队也熟。要不要跳槽？",
+      "proposed": {
+        "start_king_wen": 26,
+        "start_name": "大畜",
+        "start_bits": "111001",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "积累到顶，天路自开：动顶爻，跳槽后上下通达。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E02",
+      "category": "工作决策",
+      "scenario": "项目到了关键节点，团队已经连续加班一个月，有人开始抱怨、效率也在掉。负责人该怎么办？",
+      "proposed": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "rationale": "担子太重，到了该决断的时候：砍掉多余的任务，给团队减负。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E03",
+      "category": "工作决策",
+      "scenario": "两个部门为一个项目的归属僵持了三周，谁也不让步，会议越开气氛越僵。",
+      "proposed": {
+        "start_king_wen": 12,
+        "start_name": "否",
+        "start_bits": "000111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 35,
+        "end_name": "晋",
+        "end_bits": "000101",
+        "rationale": "否到极处，高位的人先松动一点，局面就开始向上走。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E04",
+      "category": "工作决策",
+      "scenario": "一个很看好的项目，立项申请已经交上去两个月了，上面迟迟没有批复。团队是继续等，还是先做点别的？",
+      "proposed": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "等久了别干等：先把手头的小事积累起来，等批复一到就能动。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E05",
+      "category": "工作决策",
+      "scenario": "团队内部流程积弊已久：审批要跑五个人，出了问题互相推诿。有人提议彻底整顿，但怕动静太大。",
+      "proposed": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 46,
+        "end_name": "升",
+        "end_bits": "011000",
+        "rationale": "整治要从上到下做到底：整顿完了，局面开始往上走。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E06",
+      "category": "工作决策",
+      "scenario": "一个新人入职半年，进步很快，领导想提拔他，但团队里有资历更老的同事。怎么处理才稳妥？",
+      "proposed": {
+        "start_king_wen": 46,
+        "start_name": "升",
+        "start_bits": "011000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 15,
+        "end_name": "谦",
+        "end_bits": "001000",
+        "rationale": "稳步上升，但要谦逊低调：提拔要让人服气，别张扬。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E07",
+      "category": "谈判",
+      "scenario": "和供应商谈续约，对方坚持涨价 20%，我们觉得最多接受 8%。谈了三轮，谁也不让步。",
+      "proposed": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "争执不下，不如先散开冷静：各自退一步，换个时间再谈。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E08",
+      "category": "谈判",
+      "scenario": "公司和客户对交付标准理解不一致，客户认为我们没做到合同要求，我们认为已经超额完成。气氛很僵。",
+      "proposed": {
+        "start_king_wen": 12,
+        "start_name": "否",
+        "start_bits": "000111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 25,
+        "end_name": "无妄",
+        "end_bits": "100111",
+        "rationale": "僵局中先别妄动：顺其自然，把事实摆清楚，局自己会松动。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E09",
+      "category": "谈判",
+      "scenario": "两个合作方对产品方向意见完全相反：一方要做高端，一方要走量。中间卡着一个谁也绕不开的技术难题。",
+      "proposed": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 21,
+        "end_name": "噬嗑",
+        "end_bits": "100101",
+        "rationale": "分歧中间有梗阻：先把那个技术难题啃掉，分歧才有谈的余地。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E10",
+      "category": "谈判",
+      "scenario": "三家公司想联合做一个项目，大家目标一致，但谁出多少资源、谁说了算还没谈拢。",
+      "proposed": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 25,
+        "end_name": "无妄",
+        "end_bits": "100111",
+        "rationale": "人多合作，别强求：顺其自然，先把能做的部分做起来。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E11",
+      "category": "谈判",
+      "scenario": "和客户谈年度预算，对方想砍掉三分之一，但我们的成本摆在那里，砍了就做不下来。",
+      "proposed": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 61,
+        "end_name": "中孚",
+        "end_bits": "110011",
+        "rationale": "守住分寸，谈到最后靠诚信：把账算清楚，对方自然信你。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E12",
+      "category": "谈判",
+      "scenario": "竞争对手突然来挖我们的核心员工，开出的条件很好。员工还没决定，先来找我们谈。",
+      "proposed": {
+        "start_king_wen": 44,
+        "start_name": "姤",
+        "start_bits": "011111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 1,
+        "end_name": "乾",
+        "end_bits": "111111",
+        "rationale": "意外相遇也是机会：顺势做大，拿出诚意把人留住、把事做大。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E13",
+      "category": "关系",
+      "scenario": "暗恋一个人很久了，对方似乎也有好感，但谁也没捅破窗户纸。到底要不要表白？",
+      "proposed": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "rationale": "两心相感，人聚到一起：表白了，关系就从感应变成汇合。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E14",
+      "category": "关系",
+      "scenario": "家里家务分工一直不均，一个人做得多、怨气也多，另一个人觉得理所当然。怎么开口谈才不吵架？",
+      "proposed": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "家里分工调顺了，彼此都受益：先把分工摆到台面上谈清楚。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E15",
+      "category": "关系",
+      "scenario": "和一个老朋友因为误会疏远了半年，其实双方都想修复，但谁也不好意思先开口。",
+      "proposed": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 2,
+        "end_name": "坤",
+        "end_bits": "000000",
+        "rationale": "亲近到一定程度，顺应承载：一方先伸手，关系自然回到从前。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E16",
+      "category": "关系",
+      "scenario": "一个社群本来很活跃，最近人心散了，活动也没人来。组织者想重新凝聚大家。",
+      "proposed": {
+        "start_king_wen": 59,
+        "start_name": "涣",
+        "start_bits": "010011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "人心散了，先看清楚局势：看明白大家到底想要什么，再凝聚。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E17",
+      "category": "关系",
+      "scenario": "一次失信之后，合作伙伴对你的信任打了折扣，合作还在继续，但气氛明显不如从前。",
+      "proposed": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "信任修复后先小步积累：别一下求大，用一件件小事把信任挣回来。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E18",
+      "category": "关系",
+      "scenario": "一段关系里总觉得自己位置不对：付出很多，名分却没有，越想越委屈。",
+      "proposed": {
+        "start_king_wen": 54,
+        "start_name": "归妹",
+        "start_bits": "110100",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 51,
+        "end_name": "震",
+        "end_bits": "100100",
+        "rationale": "位置不对，震动一下惊醒：重新定位，该谈的谈清楚。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E19",
+      "category": "创意",
+      "scenario": "脑子里有个全新的产品点子，没人做过，自己很兴奋，但不知道从哪下手。",
+      "proposed": {
+        "start_king_wen": 1,
+        "start_name": "乾",
+        "start_bits": "111111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 44,
+        "end_name": "姤",
+        "end_bits": "011111",
+        "rationale": "带头做事，引来意外相遇：先动起来，机会和同伴会在路上出现。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E20",
+      "category": "创意",
+      "scenario": "一个作品折腾了半年，终于立起来了：结构完整，也有人愿意用。下一步该往哪使劲？",
+      "proposed": {
+        "start_king_wen": 50,
+        "start_name": "鼎",
+        "start_bits": "011101",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 14,
+        "end_name": "大有",
+        "end_bits": "111101",
+        "rationale": "新局面立住了，开始有收获：先把成果巩固下来，再图扩大。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E21",
+      "category": "创意",
+      "scenario": "作品内容不错，但包装很糙，别人第一眼没兴趣点进来。是花时间打磨包装，还是先堆内容？",
+      "proposed": {
+        "start_king_wen": 22,
+        "start_name": "贲",
+        "start_bits": "101001",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 30,
+        "end_name": "离",
+        "end_bits": "101101",
+        "rationale": "装饰之下要见光明：包装要让人一眼看到内容在发光。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E22",
+      "category": "创意",
+      "scenario": "一个想法很好，但推不动：开会讲了几次，大家听听就过去了。怎么让它渗透进去？",
+      "proposed": {
+        "start_king_wen": 57,
+        "start_name": "巽",
+        "start_bits": "011011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 53,
+        "end_name": "渐",
+        "end_bits": "001011",
+        "rationale": "像风一样渗透，循序渐进：别指望一次说服，小步推进。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E23",
+      "category": "创意",
+      "scenario": "团队刚拿了一个奖，大家都很兴奋，士气正高。趁热打铁开新项目，还是先冷静一下？",
+      "proposed": {
+        "start_king_wen": 16,
+        "start_name": "豫",
+        "start_bits": "000100",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 51,
+        "end_name": "震",
+        "end_bits": "100100",
+        "rationale": "高兴过头要惊醒一下：先把准备工作做扎实，别光顾着乐。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E24",
+      "category": "创意",
+      "scenario": "一个项目正处在最盛的时候：用户涨得快，口碑也好，但团队已经感到吃力了。",
+      "proposed": {
+        "start_king_wen": 55,
+        "start_name": "丰",
+        "start_bits": "101100",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 36,
+        "end_name": "明夷",
+        "end_bits": "101000",
+        "rationale": "正盛时主动收敛、韬光养晦：盛极要防衰，别等到撑不住才停。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E25",
+      "category": "日常",
+      "scenario": "深夜了，明天还有重要的事，是继续刷题还是去休息？手里的题刷到一半，停不下来。",
+      "proposed": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "一坑接一坑地刷，越刷越深：停下来，让井水重新蓄满。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E26",
+      "category": "日常",
+      "scenario": "连续忙了两个月，身体发出信号：失眠、没胃口。是该彻底停下来休息一阵了。",
+      "proposed": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 15,
+        "end_name": "谦",
+        "end_bits": "001000",
+        "rationale": "该停就停，停到最后归于平和：彻底休息，养好再出发。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E27",
+      "category": "日常",
+      "scenario": "经历了一段低谷：失业、失恋接连发生。最近感觉慢慢缓过来了，想重新开始。",
+      "proposed": {
+        "start_king_wen": 24,
+        "start_name": "复",
+        "start_bits": "100000",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 2,
+        "end_name": "坤",
+        "end_bits": "000000",
+        "rationale": "刚复苏，别急着动：先顺应、承载，把脚跟站稳。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E28",
+      "category": "日常",
+      "scenario": "总觉得生活像在透支：工作、社交、熬夜，样样都在消耗。想换个活法，先养好根本。",
+      "proposed": {
+        "start_king_wen": 48,
+        "start_name": "井",
+        "start_bits": "011010",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "rationale": "根基养好了，接下来是等时机：先把井养好，再谈取水。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E29",
+      "category": "日常",
+      "scenario": "被一件烦心事困住了：想了很多办法都行不通，进也不是，退也不是。",
+      "proposed": {
+        "start_king_wen": 47,
+        "start_name": "困",
+        "start_bits": "010110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "rationale": "被困时人聚到一起：找人商量，合力找出路。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    },
+    {
+      "id": "E30",
+      "category": "日常",
+      "scenario": "一件拖了很久的事，试了好几次都没成。心里还抱着希望，但不知道还要不要继续。",
+      "proposed": {
+        "start_king_wen": 64,
+        "start_name": "未济",
+        "start_bits": "010101",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 40,
+        "end_name": "解",
+        "end_bits": "010100",
+        "rationale": "拖了很久的事终于松动、解开了：再推一把，困局就散了。"
+      },
+      "label_status": "draft — proposed by the author, awaiting Wen's review, not ground truth"
+    }
+  ]
+}
