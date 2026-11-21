@@ -1,22 +1,28 @@
-"""Hexagram documents for the grounding encoder (Phase 1).
+"""Hexagram documents for the grounding encoder (Phase 1, enriched in the
+measurement step).
 
-Each hexagram gets ONE document: its name plus a single-line modern-Chinese
-reading authored for this project. The readings are deliberately plain and
-short — they describe the *situation pattern* the hexagram stands for
-(e.g. a deadlock, a fresh start, a burden too heavy to carry), so that a
-sentence-embedding model can match a situation description to a hexagram
-by resonance (cosine similarity).
+Each hexagram gets ONE document, in three layers:
 
-No classical guaci (卦辞) text is included: the *Yijing* original text is
-~3,000 years old and public domain, but every usable modern
-edition/translation/annotation is copyrighted, and copying one from memory
-risks reproducing a modern text. The one-line readings below are original
-to this project (MIT, like the rest of the repo). If a clearly
-public-domain classical source is vendored later, it should be added with
-attribution and this note updated.
+1. The original one-line modern-Chinese reading (``READINGS``) — kept
+   exactly as in Phase 1; it is what the interpreter still quotes and
+   what the LLM baseline was prompted with.
+2. A short authored paragraph (``PARAGRAPHS``): core theme, typical
+   situations, and what the hexagram tends to move toward.
+3. Upper and lower trigram names + one-line trigram meanings
+   (``TRIGRAMS``): the two 3-line halves a hexagram is built from.
+
+All text is authored for this project (MIT, like the rest of the repo),
+grounded in the standard, public-domain meanings of the hexagrams and
+trigrams — no copied modern translation or annotation. No classical
+guaci (卦辞) text is included: the *Yijing* original text is ~3,000
+years old and public domain, but every usable modern
+edition/translation/annotation is copyrighted, and copying one from
+memory risks reproducing a modern text. If a clearly public-domain
+classical source is vendored later, it should be added with attribution
+and this note updated.
 
 The document text is what gets embedded. Format per hexagram:
-    "<name>：<one-line reading>"
+    "<name>：<one-line reading> <paragraph> 上卦<upper>（<upper meaning>），下卦<lower>（<lower meaning>）。"
 """
 
 from __future__ import annotations
@@ -93,22 +99,130 @@ READINGS: dict[int, str] = {
     64: "未成定局：事情还没成，仍在路上，保持希望。",
 }
 
+# Short authored paragraphs, one per hexagram: core theme, typical
+# situations, and what the situation tends to move toward. Grounded in
+# the standard meanings of the hexagrams; wording is original to this
+# project.
+PARAGRAPHS: dict[int, str] = {
+    1: "讲的是开创与主导。处在势头向上、可以主动带头的局面，适合把事情做起来、做大；但力量走到极处会亢，需要留有余地。动向：由开创走向通达，盛极则要防亢。",
+    2: "讲的是顺应与承载。局面需要的是配合而不是带头：顺着大势走，把事情接下来、扛起来，柔顺反而能成事。动向：由承载走向稳固，柔顺中积累力量。",
+    3: "万事开头难。事情刚起步，处处受阻，像草木初生穿破土层；这时宜守不宜攻，先站稳脚跟、理清头绪。动向：艰难中求生长，站稳后才能展开。",
+    4: "讲启蒙与学习。处在不懂的局面：像学生一样虚心求教，别装懂，也别急着下结论。动向：由蒙昧走向明白，问对了人、学对了路就通了。",
+    5: "讲等待时机。事情还没到能做的时候，硬上只会坏事；耐心等待，同时养精蓄锐、把准备做足。动向：等时机成熟再动，等待本身就是行动的一部分。",
+    6: "起了争端。双方各执一词、互不相让；这时宜和解退让，不宜把官司打到底——争赢了也可能输了关系。动向：由争执走向和解，或由和解走向新的僵局，取决于是否有人先让一步。",
+    7: "讲组织与带队。事情需要纪律和统帅：像带队伍打仗一样，目标要清、号令要明、赏罚要公。动向：有纪律的队伍能成事，无纪律的队伍再多人也是一盘散沙。",
+    8: "讲亲近与结盟。互相依靠才能成事：找到可以并肩的人，团结起来，力量就有了。动向：由亲近走向合作，合作久了要防亲疏失衡。",
+    9: "小有积蓄。事情有了小成，但力量还不够推不动大的；继续积累，别急着摊牌。动向：积小成大，等力量够了再往前走。",
+    10: "讲谨慎前行。如履薄冰：每一步都要小心，守规矩、懂分寸，才能平安走过去。动向：小心走稳了，路就越走越宽；一旦轻率，就会踩空。",
+    11: "通达顺畅。上下沟通、内外通畅，局面打开了，否极泰来；这时宜趁势把事做成。动向：由通达走向更大通达，但盛时要防否的种子。",
+    12: "闭塞僵局。上下不通、卡住了：先守住，别硬闯，等局势自己松动。动向：否到极处会向泰转，关键是在僵局里别把局面弄得更糟。",
+    13: "志同道合的人聚在一起。公开合作、目标一致，力量就聚起来了；但人多要防小圈子。动向：由同心走向同行，合作要公开、要讲规矩。",
+    14: "丰收在手。收获很大：宜分享、不宜独占，越分享越稳固。动向：由丰收走向更大的丰收，或由独占走向失去。",
+    15: "功成不居。越低调越稳：有本事不张扬，有功劳不居功，反而走得长远。动向：谦逊带来长久，骄矜带来倾覆。",
+    16: "愉悦与准备。心情松快、士气正高，但别只顾高兴：要趁势预做准备，把下一步想清楚。动向：高兴而有备则能成事，高兴而无备则乐极生悲。",
+    17: "顺势跟随。跟着对的人、顺着对的变化走：别硬拗，顺势反而走得快。动向：跟对了人就顺，跟错了人就被带偏。",
+    18: "整治积弊。内部出了问题：积弊已久，要动手整治、拨乱反正，越拖越糟。动向：整治好了局面重新向上，整治不彻底则旧病复发。",
+    19: "临近与督导。亲自到场、监督推动：机会在眼前，靠人盯着才能把事落实。动向：亲力亲为能把事做成，遥控指挥容易走样。",
+    20: "观察与展示。先看清楚再做决定；同时自己也在被别人看着：言行要经得起看。动向：看明白了再动，动了也要让人看明白。",
+    21: "咬合突破。中间有梗阻：要下决心啃掉它，含糊过去只会越卡越紧。动向：梗阻啃掉局面就通了，啃不掉就一直卡着。",
+    22: "装饰与体面。外表光鲜：包装和体面有其用处，但内容为本，别只做表面。动向：装饰得体能成事，徒有其表迟早露馅。",
+    23: "剥落衰败。根基被一点点剥掉：宜守不宜进，先保住根本再说。动向：剥到极处会触底反弹，但反弹之前要先活下来。",
+    24: "回归与复苏。低谷反弹、重新开始：一阳来复，事情开始往回走。动向：由复苏走向生长，刚起步时别急躁。",
+    25: "顺其自然。不妄动、不强求：按本分做事，别动歪心思。动向：守正能得天助，妄动则自招祸患。",
+    26: "蓄势待发。积蓄力量：等到时机一到就大干一场；蓄得越满，发得越猛。动向：由积蓄走向大干，蓄而不发则白白积攒。",
+    27: "滋养与口腹。靠什么养自己：言语和饮食都要节制，养身也要养心。动向：养得当则精力充沛，养不当则口腹招祸。",
+    28: "负担过重。担子太重、结构快撑不住：要减负，否则迟早要断。动向：减负后能重新站稳，不减负则大厦将倾。",
+    29: "重重险阻。一坑接一坑：险中求生，保持冷静，别慌。动向：在险中学会行险，熬过去就是出路。",
+    30: "光明与依附。像火一样明亮：依附于正道才能持久，光明要有所附丽。动向：光明而有附则长久，无所附则转瞬即逝。",
+    31: "感应与心动。两心相感、互相吸引：情感先行，心动了事才动。动向：由感应走向结合，感应要真诚，不能只凭一时心动。",
+    32: "持久与恒定。长久坚持：靠的是稳定的节奏，不是一时的爆发。动向：恒久则成事，朝三暮四则一事无成。",
+    33: "退避与抽身。时机不对：体面地退一步，保存实力，等时机回来。动向：退是为了将来再进，退得体面才有后路。",
+    34: "力量强盛。气势正旺：但别逞强，守住分寸，强极则易折。动向：强而有度则能成事，强而无度则招祸。",
+    35: "晋升与前进。太阳升起、向上发展：宜主动争取，把握上升的势头。动向：由上升走向更高的位置，上升时要让人服气。",
+    36: "光明受损。环境黑暗：韬光养晦，保全自己，等天亮再说。动向：藏光于内可保全，硬碰硬则光明熄灭。",
+    37: "家与分工。家里各有其位、内外分工：先齐家，再言其他。动向：家齐则事顺，家乱则事事受累。",
+    38: "背离与分歧。看法不同、各走各的：求同存异，别强求一致。动向：分歧中求小同可成事，强求大同反而激化。",
+    39: "寸步难行。进退两难、走不动了：找人帮忙，别一个人硬扛。动向：有人相助则能脱困，无人相助则原地打转。",
+    40: "解开与释放。困局松动了：赶紧脱身，别恋战。动向：解开了就轻装上路，恋战则可能重新被困。",
+    41: "有所减损。先舍后得：减掉多余的才能轻装上路。动向：损得当则得益，损不当则越损越少。",
+    42: "有所增益。彼此受益：宜往前走，利人利己。动向：增益时要趁势而进，分享增益则更增益。",
+    43: "决断与清除。到了该拍板的时候：公开决断、清除隐患，别拖。动向：决断及时则局势清明，拖延则隐患坐大。",
+    44: "不期而遇。意外相遇：机会突然出现，也要防备——来得突然去得也快。动向：遇上了要抓住，但也要防备其中的隐患。",
+    45: "聚集与汇合。人、资源聚到一起：趁势成事，聚起来才有力量。动向：聚而有方则成事，聚而无方则散。",
+    46: "步步上升。像树一样慢慢长：稳步上升，不急不躁。动向：稳步上升则根基牢固，拔苗助长则根基不稳。",
+    47: "困顿受阻。被困住了：内心要稳住，等转机。动向：困中守正可待转机，困中自乱则越陷越深。",
+    48: "滋养与根基。井水取之不竭：养好根本，别只顾眼前。动向：根本养好了，取用不尽；根本坏了，什么都没了。",
+    49: "变革与革新。旧的要改：变革要顺应人心、讲清楚，时机到了再改。动向：革得顺应人心则成事，革得逆人心则生乱。",
+    50: "立新与鼎立。新局面立起来了：宜稳固、宜分享成果。动向：鼎立稳固则新局长久，立而不稳则倾覆。",
+    51: "震动与惊醒。突然的震动让人警醒：动起来反而是好事，别被吓住。动向：惊醒后行动则转危为机，惊而僵住则错失良机。",
+    52: "止与静。该停就停：守住边界，别乱动。动向：止得住则不生事，止不住则生乱。",
+    53: "循序渐进。像大雁一样一步步来：稳扎稳打，别图快。动向：渐进则稳固，图快则根基不牢。",
+    54: "不当的位置。位置不对、名分不正：宜谨慎，别强求。动向：处在不当的位置，守分可保平安，强求则招祸。",
+    55: "丰盛与盛极。正是最盛的时候：盛极要防衰，越是丰盛越要小心。动向：盛而知防则能守成，盛而不知防则盛极而衰。",
+    56: "羁旅在外。在外漂泊：靠人帮衬，小心行事。动向：在外靠人缘立身，行事稳妥则能安身。",
+    57: "顺从与渗透。像风一样无孔不入：柔顺而坚持，慢慢渗透。动向：渗透久了能成事，急于求成则风过无痕。",
+    58: "喜悦与交流。以言语取悦人、坦诚沟通：皆大欢喜。动向：交流坦诚则人心聚拢，言语失当则喜悦变祸。",
+    59: "涣散与离心。人心散了：要重新凝聚，分散反而能解困。动向：涣散中求凝聚，凝聚不成则各奔东西。",
+    60: "节制与分寸。凡事有度：知道什么时候停。动向：有节制则长久，无节制则透支。",
+    61: "诚信在内。心中有诚信：别人自然信你。动向：诚信在内则上下相孚，失信则无人可托。",
+    62: "小有过越。小事上可以过一点：大事仍要守规矩。动向：小过而知止可成事，大事上过越则招祸。",
+    63: "已成定局。事情成了：但别松懈，守成比创业难。动向：成而知守则长久，成而松懈则前功尽弃。",
+    64: "未成定局。事情还没成：仍在路上，保持希望。动向：未成而努力则有望成，未成而放弃则无望。",
+}
+
+# The eight trigrams. Keyed by the English name used in the zhouyi-6bit
+# dataset (``Hexagram.upper_trigram`` / ``lower_trigram``).
+# Value: (Chinese name, one-line meaning). Meanings are standard
+# public-domain trigram themes, wording original to this project.
+TRIGRAMS: dict[str, tuple[str, str]] = {
+    "Qian": ("乾", "天，创造与主导：主动开创的力量。"),
+    "Kun": ("坤", "地，顺应与承载：配合包容的力量。"),
+    "Zhen": ("震", "雷，震动与惊醒：行动唤起的力量。"),
+    "Kan": ("坎", "水，重重险阻：在险中流动的力量。"),
+    "Gen": ("艮", "山，止与静：守住边界的力量。"),
+    "Xun": ("巽", "风，顺从与渗透：柔顺坚持的力量。"),
+    "Li": ("离", "火，光明与依附：照亮并有所依附的力量。"),
+    "Dui": ("兑", "泽，喜悦与交流：坦诚沟通的力量。"),
+}
+
+
+def trigram_info(english_name: str) -> tuple[str, str]:
+    """(Chinese name, one-line meaning) for a trigram English name."""
+    return TRIGRAMS[english_name]
+
 
 def hexagram_documents() -> list[dict]:
     """One document per hexagram, in King Wen order.
 
-    Each document is ``{"king_wen", "bits", "name_zh", "text"}`` where
-    ``text`` is the string that gets embedded.
+    Each document is ``{"king_wen", "bits", "name_zh", "text",
+    "reading", "paragraph", "upper_trigram", "lower_trigram",
+    "upper_trigram_zh", "lower_trigram_zh",
+    "upper_trigram_meaning", "lower_trigram_meaning"}`` where ``text``
+    is the string that gets embedded.
     """
     docs = []
     for h in load_hexagrams():
-        reading = READINGS[h.king_wen]
+        upper_zh, upper_meaning = TRIGRAMS[h.upper_trigram]
+        lower_zh, lower_meaning = TRIGRAMS[h.lower_trigram]
         docs.append(
             {
                 "king_wen": h.king_wen,
                 "bits": h.bits,
                 "name_zh": h.name_zh,
-                "text": f"{h.name_zh}：{reading}",
+                "reading": READINGS[h.king_wen],
+                "paragraph": PARAGRAPHS[h.king_wen],
+                "upper_trigram": h.upper_trigram,
+                "lower_trigram": h.lower_trigram,
+                "upper_trigram_zh": upper_zh,
+                "lower_trigram_zh": lower_zh,
+                "upper_trigram_meaning": upper_meaning,
+                "lower_trigram_meaning": lower_meaning,
+                "text": (
+                    f"{h.name_zh}：{READINGS[h.king_wen]} "
+                    f"{PARAGRAPHS[h.king_wen]} "
+                    f"上卦{upper_zh}（{upper_meaning}），"
+                    f"下卦{lower_zh}（{lower_meaning}）。"
+                ),
             }
         )
     return docs

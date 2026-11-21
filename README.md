@@ -52,7 +52,31 @@ the dynamics learned a direction that generalizes**; the in-sample gain
 is consistent with overfitting 4 weights on 30 draft labels. That is a
 result, not a failure to hide. See [docs/phase2-notes.md](docs/phase2-notes.md).
 
-No LLM calls anywhere in this codebase — that is the point.
+**Measurement step — LLM baseline, richer documents, 100-scenario exam
+(partly done, 2026-11-21).** The baseline runner
+(`scripts/run_baseline.py`, DeepSeek `deepseek-chat`, same prompt
+information the encoder gets) is written and its offline checks pass,
+but the first live call was blocked by a timed-out approval, so **there
+is still no baseline number** — see [docs/baseline-v1.md](docs/baseline-v1.md)
+for exactly what happened and how to run it. Hexagram documents were
+enriched (a short paragraph per hexagram + upper/lower trigram meanings,
+[docs/rich-documents.md](docs/rich-documents.md)): on the 30 scenarios
+top-1 went 15/30 → 11/30, top-3 20/30 → 16/30, path still 2/30 —
+richer documents did not help there. A new 100-scenario exam
+(`taiji_field/data/exam_100.json`, 5 categories × 20) was built with
+two annotation passes (author reasoning + embedding-resonance retrieval)
+and a third pass pending human review — **99/100 scenarios are flagged**,
+the two passes fully agree on only 1. The Phase 2 reasoner scores
+**10/100 top-1, 21/100 top-3, 1/100 path** on it, with weights fitted on
+the 30 (not refit). The honest headline: the 30-scenario 50% top-1 does
+not survive a bigger paper (7–10%), so it was likely flattered by the
+small, single-author label set. See
+[docs/exam-100-notes.md](docs/exam-100-notes.md).
+
+No LLM calls anywhere in the `taiji_field` package — that is the point.
+Evaluation-only scripts under `scripts/` (`run_baseline.py`) may call an
+LLM through the registered connector; they are never imported by the
+package.
 
 ## Install
 
@@ -95,6 +119,14 @@ python -m taiji_field.continuous 1 2 --steps 5
 # Phase 2: run the exam with the fitted dynamics scorer (fits weights,
 # leave-out check, writes exam_report_v2.json — never overwrites v1)
 python -m taiji_field.exam --reasoner v2
+
+# Measurement step: LLM baseline on the 30 (needs DeepSeek connector
+# approval; writes taiji_field/data/baseline_v1.json)
+python scripts/run_baseline.py
+
+# Measurement step: run the v2 reasoner (weights fitted on the 30,
+# not refit) on the 100-scenario exam
+python scripts/run_exam_100.py
 
 # Re-render the graph visualization
 python -m taiji_field.viz

@@ -1,0 +1,5046 @@
+{
+  "version": "100-v1",
+  "note": "DRAFT labels. Consensus is 2-agent + (1-LLM or pending-human), NOT 3-human — a planned deviation from roadmap section 6, to be upgraded when humans review. Pass A: author reasoning from hexagram meanings. Pass B: embedding-resonance retrieval + manual check of disagreements (a different method from A, not a copy). Pass C: pending human review — no second LLM is available through the connectors, and the baseline model (DeepSeek deepseek-chat) must not also be the annotator. Where A and B disagree, the tie-break takes pass A and flags the scenario. End hexagrams are computed from start + moving lines, never hand-typed.",
+  "annotation": {
+    "pass_A": "author reasoning from hexagram meanings (start + moving lines + rationale)",
+    "pass_B": "embedding-resonance top-1 + v1 reasoner path, disagreements manually checked by the author",
+    "pass_C": "pending-human-review — no second general LLM available via connectors (meta-model-api is FixLens photo analysis only); baseline model excluded as annotator to avoid bias",
+    "tie_break": "on A/B disagreement, take pass A and flag the scenario"
+  },
+  "agreement_summary": {
+    "n": 100,
+    "start_agree": 10,
+    "lines_agree": 10,
+    "full_agree": 1,
+    "flagged": 99
+  },
+  "scenarios": [
+    {
+      "id": "F01",
+      "category": "工作决策",
+      "scenario": "公司要砍掉一个做了三年的老产品线，团队里有人反对、有人觉得早该砍了，负责人迟迟下不了决心。",
+      "pass_a": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 34,
+        "end_name": "大壮",
+        "end_bits": "111100",
+        "rationale": "决断到了中段：公开拍板、清除隐患，拖下去只会更难。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5372964009095071
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 34,
+        "end_name": "大壮",
+        "end_bits": "111100",
+        "rationale": "决断到了中段：公开拍板、清除隐患，拖下去只会更难。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F02",
+      "category": "工作决策",
+      "scenario": "新项目招不到合适的人，猎头推的人都不合适，是降低标准先招进来，还是继续等？",
+      "pass_a": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "rationale": "等待中别干等：先把手头能做的事做好，等合适的人出现。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.574053220709077
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "rationale": "等待中别干等：先把手头能做的事做好，等合适的人出现。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F03",
+      "category": "工作决策",
+      "scenario": "两个团队合并，职级和汇报线要重新排，有人担心自己被边缘化，气氛紧张。",
+      "pass_a": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "rationale": "结盟要公开讲清楚：含糊其辞只会让人猜疑。"
+      },
+      "pass_b": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5745618043822371
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "rationale": "结盟要公开讲清楚：含糊其辞只会让人猜疑。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F04",
+      "category": "工作决策",
+      "scenario": "老板突然让接手一个烂尾项目，前任留下一堆坑，接还是推？",
+      "pass_a": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 26,
+        "end_name": "大畜",
+        "end_bits": "111001",
+        "rationale": "烂摊子要从最底层的问题动手整治。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 12,
+        "end_name": "否",
+        "end_bits": "000111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4953223584192679
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 26,
+        "end_name": "大畜",
+        "end_bits": "111001",
+        "rationale": "烂摊子要从最底层的问题动手整治。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F05",
+      "category": "工作决策",
+      "scenario": "季度目标定得太高，团队拼尽全力也够不着，是申请下调目标，还是硬扛？",
+      "pass_a": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 31,
+        "end_name": "咸",
+        "end_bits": "001110",
+        "rationale": "担子太重：先把目标调到结构撑得住的水平。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5464155600471375
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 31,
+        "end_name": "咸",
+        "end_bits": "001110",
+        "rationale": "担子太重：先把目标调到结构撑得住的水平。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F06",
+      "category": "工作决策",
+      "scenario": "核心员工提离职，手里还攥着关键客户，是加薪留人，还是放手？",
+      "pass_a": {
+        "start_king_wen": 45,
+        "start_name": "萃",
+        "start_bits": "000110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 17,
+        "end_name": "随",
+        "end_bits": "100110",
+        "rationale": "人聚到一起：先把诚意摆出来，留人的事再谈条件。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44701236561570756
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 45,
+        "start_name": "萃",
+        "start_bits": "000110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 17,
+        "end_name": "随",
+        "end_bits": "100110",
+        "rationale": "人聚到一起：先把诚意摆出来，留人的事再谈条件。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F07",
+      "category": "工作决策",
+      "scenario": "跨部门合作，对方总是不回消息、拖进度，是直接找对方老板，还是再忍忍？",
+      "pass_a": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          2,
+          5
+        ],
+        "end_king_wen": 35,
+        "end_name": "晋",
+        "end_bits": "000101",
+        "rationale": "争执不下：先退一步找中间人，再由高位的人出面松动局面。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5192595287347526
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          2,
+          5
+        ],
+        "end_king_wen": 35,
+        "end_name": "晋",
+        "end_bits": "000101",
+        "rationale": "争执不下：先退一步找中间人，再由高位的人出面松动局面。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F08",
+      "category": "工作决策",
+      "scenario": "公司推行新工具，团队抵触，说老办法挺好的，怎么推？",
+      "pass_a": {
+        "start_king_wen": 49,
+        "start_name": "革",
+        "start_bits": "101110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 17,
+        "end_name": "随",
+        "end_bits": "100110",
+        "rationale": "变革要讲清楚好处：时机未到硬推只会激起抵触。"
+      },
+      "pass_b": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5171469604549268
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 49,
+        "start_name": "革",
+        "start_bits": "101110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 17,
+        "end_name": "随",
+        "end_bits": "100110",
+        "rationale": "变革要讲清楚好处：时机未到硬推只会激起抵触。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F09",
+      "category": "工作决策",
+      "scenario": "项目做了一半，发现当初的技术选型错了，重构代价很大，继续凑合还是推倒重来？",
+      "pass_a": {
+        "start_king_wen": 23,
+        "start_name": "剥",
+        "start_bits": "000001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "根基被剥掉大半：先保住能用的部分，再谈重构。"
+      },
+      "pass_b": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5077563207744844
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 23,
+        "start_name": "剥",
+        "start_bits": "000001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "根基被剥掉大半：先保住能用的部分，再谈重构。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F10",
+      "category": "工作决策",
+      "scenario": "年终奖分配，同事觉得不公平，私下抱怨，是公开标准还是私下安抚？",
+      "pass_a": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "rationale": "分寸要公开：标准摆清楚了，抱怨才有处安放。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5337833091307408
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "rationale": "分寸要公开：标准摆清楚了，抱怨才有处安放。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F11",
+      "category": "工作决策",
+      "scenario": "新业务方向，老板想 all in，团队觉得风险太大，怎么劝？",
+      "pass_a": {
+        "start_king_wen": 34,
+        "start_name": "大壮",
+        "start_bits": "111100",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "气势正旺：提醒守住分寸，强极易折。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5224371183974464
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 34,
+        "start_name": "大壮",
+        "start_bits": "111100",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "气势正旺：提醒守住分寸，强极易折。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F12",
+      "category": "工作决策",
+      "scenario": "供应商突然断供，生产线要停，是紧急找替代，还是停下来等？",
+      "pass_a": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          2,
+          6
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "险中求生：先找能顶上的替代方案，再把供应链的后路想清楚。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5281681909092872
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          2,
+          6
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "险中求生：先找能顶上的替代方案，再把供应链的后路想清楚。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F13",
+      "category": "工作决策",
+      "scenario": "团队里两个人因为分工吵起来了，谁也不服谁，负责人怎么调解？",
+      "pass_a": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 41,
+        "end_name": "损",
+        "end_bits": "110001",
+        "rationale": "各走各的：先找到两人都能接受的小共识。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5878557931048314
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 41,
+        "end_name": "损",
+        "end_bits": "110001",
+        "rationale": "各走各的：先找到两人都能接受的小共识。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F14",
+      "category": "工作决策",
+      "scenario": "准备跳槽去创业公司，薪水涨 40% 但不稳定，留在大厂安稳但天花板明显，怎么选？",
+      "pass_a": {
+        "start_king_wen": 3,
+        "start_name": "屯",
+        "start_bits": "100010",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 8,
+        "end_name": "比",
+        "end_bits": "000010",
+        "rationale": "开头难：先想清楚自己能不能扛住最初的难，再动。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5590569563425198
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 3,
+        "start_name": "屯",
+        "start_bits": "100010",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 8,
+        "end_name": "比",
+        "end_bits": "000010",
+        "rationale": "开头难：先想清楚自己能不能扛住最初的难，再动。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F15",
+      "category": "工作决策",
+      "scenario": "公司要裁员，名单里有跟了自己三年的老员工，怎么开口谈？",
+      "pass_a": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 26,
+        "end_name": "大畜",
+        "end_bits": "111001",
+        "rationale": "有所减损：把补偿和出路谈清楚，减掉的才不至于伤人太重。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 49,
+        "end_name": "革",
+        "end_bits": "101110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4676153469646969
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 26,
+        "end_name": "大畜",
+        "end_bits": "111001",
+        "rationale": "有所减损：把补偿和出路谈清楚，减掉的才不至于伤人太重。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F16",
+      "category": "工作决策",
+      "scenario": "客户要求的功能根本做不出来，销售已经答应了，怎么跟客户解释？",
+      "pass_a": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 10,
+        "end_name": "履",
+        "end_bits": "110111",
+        "rationale": "靠诚信：把做不到的实情讲清楚，对方反而可能信你。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.48091474299270137
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 10,
+        "end_name": "履",
+        "end_bits": "110111",
+        "rationale": "靠诚信：把做不到的实情讲清楚，对方反而可能信你。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F17",
+      "category": "工作决策",
+      "scenario": "两个项目同时到 deadline，人手不够，保哪个、放哪个？",
+      "pass_a": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 53,
+        "end_name": "渐",
+        "end_bits": "001011",
+        "rationale": "该停就停：保住一个、停掉一个，比两个都做砸强。"
+      },
+      "pass_b": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44603995274061664
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 53,
+        "end_name": "渐",
+        "end_bits": "001011",
+        "rationale": "该停就停：保住一个、停掉一个，比两个都做砸强。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F18",
+      "category": "工作决策",
+      "scenario": "入职新公司三个月，发现文化和预期差很多，是适应还是再找？",
+      "pass_a": {
+        "start_king_wen": 56,
+        "start_name": "旅",
+        "start_bits": "001101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 50,
+        "end_name": "鼎",
+        "end_bits": "011101",
+        "rationale": "在外漂泊：先靠身边的人摸清情况，别急着下结论。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5248187820986723
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 56,
+        "start_name": "旅",
+        "start_bits": "001101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 50,
+        "end_name": "鼎",
+        "end_bits": "011101",
+        "rationale": "在外漂泊：先靠身边的人摸清情况，别急着下结论。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F19",
+      "category": "工作决策",
+      "scenario": "团队连续拿了两个季度第一，老板想趁热打铁再定个更高的目标，团队已经很累了。",
+      "pass_a": {
+        "start_king_wen": 55,
+        "start_name": "丰",
+        "start_bits": "101100",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 36,
+        "end_name": "明夷",
+        "end_bits": "101000",
+        "rationale": "正盛时主动收敛：盛极要防衰，别等到撑不住才停。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5437097523646148
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 55,
+        "start_name": "丰",
+        "start_bits": "101100",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 36,
+        "end_name": "明夷",
+        "end_bits": "101000",
+        "rationale": "正盛时主动收敛：盛极要防衰，别等到撑不住才停。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F20",
+      "category": "工作决策",
+      "scenario": "老客户突然要换供应商，理由是价格，是降价挽留还是放手？",
+      "pass_a": {
+        "start_king_wen": 42,
+        "start_name": "益",
+        "start_bits": "100011",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "rationale": "利人利己：把长期合作的账算清楚，价格之外还有价值。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 10,
+        "end_name": "履",
+        "end_bits": "110111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4859351879855407
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 42,
+        "start_name": "益",
+        "start_bits": "100011",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "rationale": "利人利己：把长期合作的账算清楚，价格之外还有价值。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F21",
+      "category": "谈判",
+      "scenario": "房东突然要涨租 30%，合同还没到期，是硬刚还是谈？",
+      "pass_a": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          2,
+          4
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "争执：先把合同和依据摆出来，再退一步换个谈法，硬争到底两败俱伤。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.41634795301041855
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          2,
+          4
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "争执：先把合同和依据摆出来，再退一步换个谈法，硬争到底两败俱伤。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F22",
+      "category": "谈判",
+      "scenario": "和合伙人谈股份，对方要 60%，你觉得五五开才合理，谈了两次没谈拢。",
+      "pass_a": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 1,
+        "end_name": "乾",
+        "end_bits": "111111",
+        "rationale": "志同道合：股份的事先放一放，把合作先跑起来再谈。"
+      },
+      "pass_b": {
+        "start_king_wen": 45,
+        "start_name": "萃",
+        "start_bits": "000110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 8,
+        "end_name": "比",
+        "end_bits": "000010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.48673322548194997
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 1,
+        "end_name": "乾",
+        "end_bits": "111111",
+        "rationale": "志同道合：股份的事先放一放，把合作先跑起来再谈。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F23",
+      "category": "谈判",
+      "scenario": "买二手房，中介说房东就这个价、不谈了，房子你很喜欢但超预算。",
+      "pass_a": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 19,
+        "end_name": "临",
+        "end_bits": "110000",
+        "rationale": "守住分寸：把预算底线亮清楚，谈不拢就走，别被喜欢冲昏头。"
+      },
+      "pass_b": {
+        "start_king_wen": 54,
+        "start_name": "归妹",
+        "start_bits": "110100",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.45355777441584394
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 19,
+        "end_name": "临",
+        "end_bits": "110000",
+        "rationale": "守住分寸：把预算底线亮清楚，谈不拢就走，别被喜欢冲昏头。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F24",
+      "category": "谈判",
+      "scenario": "和投资人谈估值，对方压得很低，但公司账上钱只够三个月。",
+      "pass_a": {
+        "start_king_wen": 47,
+        "start_name": "困",
+        "start_bits": "010110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "rationale": "被困住了：先稳住，别在缺钱的时候贱卖公司。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44549319798153453
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 47,
+        "start_name": "困",
+        "start_bits": "010110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "rationale": "被困住了：先稳住，别在缺钱的时候贱卖公司。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F25",
+      "category": "谈判",
+      "scenario": "和客户谈账期，对方要 90 天，我们只能接受 30 天，订单很大不想丢。",
+      "pass_a": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 61,
+        "end_name": "中孚",
+        "end_bits": "110011",
+        "rationale": "小有收获：先让一小步把订单保住，再慢慢谈账期。"
+      },
+      "pass_b": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.3789531147834362
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 61,
+        "end_name": "中孚",
+        "end_bits": "110011",
+        "rationale": "小有收获：先让一小步把订单保住，再慢慢谈账期。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F26",
+      "category": "谈判",
+      "scenario": "公司并购谈判，对方要求核心团队签三年竞业，团队有人不愿意。",
+      "pass_a": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "各有其位：把竞业的条件和补偿谈清楚，家里先达成一致。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4477028758454158
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "各有其位：把竞业的条件和补偿谈清楚，家里先达成一致。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F27",
+      "category": "谈判",
+      "scenario": "和政府部门谈补贴，材料交了三轮，每次都说缺这个缺那个。",
+      "pass_a": {
+        "start_king_wen": 39,
+        "start_name": "蹇",
+        "start_bits": "001010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 8,
+        "end_name": "比",
+        "end_bits": "000010",
+        "rationale": "走不动了：找个熟悉流程的人带路，别自己硬闯。"
+      },
+      "pass_b": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 61,
+        "end_name": "中孚",
+        "end_bits": "110011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4399520275859219
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 39,
+        "start_name": "蹇",
+        "start_bits": "001010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 8,
+        "end_name": "比",
+        "end_bits": "000010",
+        "rationale": "走不动了：找个熟悉流程的人带路，别自己硬闯。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F28",
+      "category": "谈判",
+      "scenario": "离婚谈判，财产分割谈不拢，双方都请了律师，孩子夹在中间。",
+      "pass_a": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          3,
+          5
+        ],
+        "end_king_wen": 1,
+        "end_name": "乾",
+        "end_bits": "111111",
+        "rationale": "背离：先把孩子的安排谈妥，再由高位的人让一步，财产的事慢慢谈。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4966447864408125
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          3,
+          5
+        ],
+        "end_king_wen": 1,
+        "end_name": "乾",
+        "end_bits": "111111",
+        "rationale": "背离：先把孩子的安排谈妥，再由高位的人让一步，财产的事慢慢谈。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F29",
+      "category": "谈判",
+      "scenario": "和明星主播谈合作，对方要价高得离谱，但流量确实大。",
+      "pass_a": {
+        "start_king_wen": 14,
+        "start_name": "大有",
+        "start_bits": "111101",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 38,
+        "end_name": "睽",
+        "end_bits": "110101",
+        "rationale": "收获很大：把分成谈成利益共享，别一次性买断。"
+      },
+      "pass_b": {
+        "start_king_wen": 14,
+        "start_name": "大有",
+        "start_bits": "111101",
+        "moving_lines": [
+          2,
+          5
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.48795488842766066
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 14,
+        "start_name": "大有",
+        "start_bits": "111101",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 38,
+        "end_name": "睽",
+        "end_bits": "110101",
+        "rationale": "收获很大：把分成谈成利益共享，别一次性买断。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F30",
+      "category": "谈判",
+      "scenario": "和房东谈续租，想长租三年锁定租金，房东只想一年一签。",
+      "pass_a": {
+        "start_king_wen": 32,
+        "start_name": "恒",
+        "start_bits": "011100",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 62,
+        "end_name": "小过",
+        "end_bits": "001100",
+        "rationale": "长久坚持：把三年里双方的收益算清楚，长约对房东也有好处。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4107341163828942
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 32,
+        "start_name": "恒",
+        "start_bits": "011100",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 62,
+        "end_name": "小过",
+        "end_bits": "001100",
+        "rationale": "长久坚持：把三年里双方的收益算清楚，长约对房东也有好处。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F31",
+      "category": "谈判",
+      "scenario": "供应商交货延期，合同里有违约金条款，是索赔还是先保供货？",
+      "pass_a": {
+        "start_king_wen": 21,
+        "start_name": "噬嗑",
+        "start_bits": "100101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "rationale": "中间有梗阻：先把货催到手，索赔的事等供货稳了再说。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 10,
+        "end_name": "履",
+        "end_bits": "110111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44798051375691433
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 21,
+        "start_name": "噬嗑",
+        "start_bits": "100101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "rationale": "中间有梗阻：先把货催到手，索赔的事等供货稳了再说。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F32",
+      "category": "谈判",
+      "scenario": "和对手公司谈合并，两边老板都想当老大，谈判卡在控制权上。",
+      "pass_a": {
+        "start_king_wen": 7,
+        "start_name": "师",
+        "start_bits": "010000",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 29,
+        "end_name": "坎",
+        "end_bits": "010010",
+        "rationale": "需要纪律和统帅：控制权先定下来，否则合并了也是一盘散沙。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 12,
+        "end_name": "否",
+        "end_bits": "000111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5300963206373743
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 7,
+        "start_name": "师",
+        "start_bits": "010000",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 29,
+        "end_name": "坎",
+        "end_bits": "010010",
+        "rationale": "需要纪律和统帅：控制权先定下来，否则合并了也是一盘散沙。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F33",
+      "category": "谈判",
+      "scenario": "租办公室，物业要求押三付三，现金流吃紧，想谈成押一付三。",
+      "pass_a": {
+        "start_king_wen": 48,
+        "start_name": "井",
+        "start_bits": "011010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 29,
+        "end_name": "坎",
+        "end_bits": "010010",
+        "rationale": "养好根本：把现金流的账算给对方看，押金是死的、合作是长的。"
+      },
+      "pass_b": {
+        "start_king_wen": 45,
+        "start_name": "萃",
+        "start_bits": "000110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 16,
+        "end_name": "豫",
+        "end_bits": "000100",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.45974053969721934
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 48,
+        "start_name": "井",
+        "start_bits": "011010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 29,
+        "end_name": "坎",
+        "end_bits": "010010",
+        "rationale": "养好根本：把现金流的账算给对方看，押金是死的、合作是长的。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F34",
+      "category": "谈判",
+      "scenario": "和老东家谈离职补偿，HR 说按最低标准，你想争取多一个月。",
+      "pass_a": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "rationale": "到了该拍板的时候：把诉求摆到台面上，别私下磨。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44691536319105446
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 58,
+        "end_name": "兑",
+        "end_bits": "110110",
+        "rationale": "到了该拍板的时候：把诉求摆到台面上，别私下磨。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F35",
+      "category": "谈判",
+      "scenario": "跨境合作，对方坚持用他们的合同模板，条款对我们不利。",
+      "pass_a": {
+        "start_king_wen": 56,
+        "start_name": "旅",
+        "start_bits": "001101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 52,
+        "end_name": "艮",
+        "end_bits": "001001",
+        "rationale": "在外漂泊：条款要一条一条抠，别图省事签了不利的约。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 47,
+        "end_name": "困",
+        "end_bits": "010110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.47977090774439235
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 56,
+        "start_name": "旅",
+        "start_bits": "001101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 52,
+        "end_name": "艮",
+        "end_bits": "001001",
+        "rationale": "在外漂泊：条款要一条一条抠，别图省事签了不利的约。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F36",
+      "category": "谈判",
+      "scenario": "和经销商谈独家代理，对方要独家但不承诺销量。",
+      "pass_a": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 29,
+        "end_name": "坎",
+        "end_bits": "010010",
+        "rationale": "互相依靠：独家可以给，但销量要对赌，结盟不能单方面付出。"
+      },
+      "pass_b": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.45143031758620605
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 29,
+        "end_name": "坎",
+        "end_bits": "010010",
+        "rationale": "互相依靠：独家可以给，但销量要对赌，结盟不能单方面付出。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F37",
+      "category": "谈判",
+      "scenario": "拆迁谈判，邻居都签了，就剩你一家，开发商天天上门。",
+      "pass_a": {
+        "start_king_wen": 33,
+        "start_name": "遁",
+        "start_bits": "001111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "rationale": "时机不对：先别硬顶，把条件谈到满意再退。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4437416730693328
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 33,
+        "start_name": "遁",
+        "start_bits": "001111",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "rationale": "时机不对：先别硬顶，把条件谈到满意再退。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F38",
+      "category": "谈判",
+      "scenario": "和学校谈合作办学，对方要冠名权，你方想保留品牌独立性。",
+      "pass_a": {
+        "start_king_wen": 22,
+        "start_name": "贲",
+        "start_bits": "101001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 26,
+        "end_name": "大畜",
+        "end_bits": "111001",
+        "rationale": "外表光鲜：冠名可以谈，但内容和品牌底线要守住。"
+      },
+      "pass_b": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4787955699138506
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 22,
+        "start_name": "贲",
+        "start_bits": "101001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 26,
+        "end_name": "大畜",
+        "end_bits": "111001",
+        "rationale": "外表光鲜：冠名可以谈，但内容和品牌底线要守住。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F39",
+      "category": "谈判",
+      "scenario": "劳务纠纷谈判，员工索赔金额超出预期，公司想和解不想上法庭。",
+      "pass_a": {
+        "start_king_wen": 40,
+        "start_name": "解",
+        "start_bits": "010100",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 16,
+        "end_name": "豫",
+        "end_bits": "000100",
+        "rationale": "困局松动了：和解的窗口在，赶紧谈，别拖到对簿公堂。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 64,
+        "end_name": "未济",
+        "end_bits": "010101",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5354558822769043
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 40,
+        "start_name": "解",
+        "start_bits": "010100",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 16,
+        "end_name": "豫",
+        "end_bits": "000100",
+        "rationale": "困局松动了：和解的窗口在，赶紧谈，别拖到对簿公堂。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F40",
+      "category": "谈判",
+      "scenario": "和投资人谈对赌，业绩达不到要回购股份，创始人觉得风险太大。",
+      "pass_a": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 32,
+        "end_name": "恒",
+        "end_bits": "011100",
+        "rationale": "担子太重：对赌条款要减到结构撑得住的水平。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4555664285287838
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 32,
+        "end_name": "恒",
+        "end_bits": "011100",
+        "rationale": "担子太重：对赌条款要减到结构撑得住的水平。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F41",
+      "category": "关系",
+      "scenario": "父母催婚催得紧，每次回家都要吵一架，是顺从还是坚持自己的节奏？",
+      "pass_a": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "家里各有其位：把自己的打算摆到台面上谈清楚。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 53,
+        "end_name": "渐",
+        "end_bits": "001011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5395955096682001
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "家里各有其位：把自己的打算摆到台面上谈清楚。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F42",
+      "category": "关系",
+      "scenario": "最好的朋友借了钱一直不还，开口要怕伤感情，不开口自己难受。",
+      "pass_a": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "信任要靠一件件小事挣回来：先提个小数目试探。"
+      },
+      "pass_b": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 47,
+        "end_name": "困",
+        "end_bits": "010110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4498351749191851
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "信任要靠一件件小事挣回来：先提个小数目试探。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F43",
+      "category": "关系",
+      "scenario": "夫妻两人一个想留在大城市，一个想回老家，僵持半年了。",
+      "pass_a": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          2,
+          4
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "两心相感：先别争地点，谈谈各自到底在怕什么，再把心意摆到台面上。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.42224413354730267
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          2,
+          4
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "两心相感：先别争地点，谈谈各自到底在怕什么，再把心意摆到台面上。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F44",
+      "category": "关系",
+      "scenario": "孩子沉迷游戏，成绩下滑，管严了吵架、不管又担心。",
+      "pass_a": {
+        "start_king_wen": 4,
+        "start_name": "蒙",
+        "start_bits": "010001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 23,
+        "end_name": "剥",
+        "end_bits": "000001",
+        "rationale": "不懂就问：先弄明白孩子在游戏里得到了什么，再谈管教。"
+      },
+      "pass_b": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 47,
+        "end_name": "困",
+        "end_bits": "010110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4727887413012746
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 4,
+        "start_name": "蒙",
+        "start_bits": "010001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 23,
+        "end_name": "剥",
+        "end_bits": "000001",
+        "rationale": "不懂就问：先弄明白孩子在游戏里得到了什么，再谈管教。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F45",
+      "category": "关系",
+      "scenario": "同事总在背后说你坏话，传到你耳朵里了，是当面对质还是装不知道？",
+      "pass_a": {
+        "start_king_wen": 36,
+        "start_name": "明夷",
+        "start_bits": "101000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "环境黑暗：先保全自己，别正面硬碰。"
+      },
+      "pass_b": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 41,
+        "end_name": "损",
+        "end_bits": "110001",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.46262041191675873
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 36,
+        "start_name": "明夷",
+        "start_bits": "101000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "环境黑暗：先保全自己，别正面硬碰。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F46",
+      "category": "关系",
+      "scenario": "和父母住在一起，老人总插手带孩子的方式，矛盾越来越多。",
+      "pass_a": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "rationale": "各有其位：把带孩子的分工划清楚，谁负责谁说了算。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4800437700327399
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": true,
+        "full_agree": true
+      },
+      "flagged": false,
+      "final_source": "A+B agree",
+      "proposed": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 13,
+        "end_name": "同人",
+        "end_bits": "101111",
+        "rationale": "各有其位：把带孩子的分工划清楚，谁负责谁说了算。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F47",
+      "category": "关系",
+      "scenario": "暗恋的人突然主动找你聊天，聊得很投机，是趁热表白还是再等等？",
+      "pass_a": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "rationale": "两心相感：聊得投机就约出来见面，关系要从线上走到线下。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5078040476120688
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "rationale": "两心相感：聊得投机就约出来见面，关系要从线上走到线下。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F48",
+      "category": "关系",
+      "scenario": "老朋友创业找你投资，项目看起来不错，但你俩对钱的事向来敏感。",
+      "pass_a": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 30,
+        "end_name": "离",
+        "end_bits": "101101",
+        "rationale": "公开合作：钱的事先写清楚，亲兄弟也要明算账。"
+      },
+      "pass_b": {
+        "start_king_wen": 63,
+        "start_name": "既济",
+        "start_bits": "101010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5565624222563145
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 30,
+        "end_name": "离",
+        "end_bits": "101101",
+        "rationale": "公开合作：钱的事先写清楚，亲兄弟也要明算账。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F49",
+      "category": "关系",
+      "scenario": "伴侣总加班到半夜，回家倒头就睡，两人几乎没话说了。",
+      "pass_a": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "rationale": "互相依靠：先约个固定的时间见面，关系要靠相处养。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.36370440053960795
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 45,
+        "end_name": "萃",
+        "end_bits": "000110",
+        "rationale": "互相依靠：先约个固定的时间见面，关系要靠相处养。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F50",
+      "category": "关系",
+      "scenario": "邻居装修吵得人睡不着觉，上门说了两次没用，是忍还是投诉？",
+      "pass_a": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 64,
+        "end_name": "未济",
+        "end_bits": "010101",
+        "rationale": "争执：把物业拉进来做中间人，别自己和邻居硬碰。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5130379888019061
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 64,
+        "end_name": "未济",
+        "end_bits": "010101",
+        "rationale": "争执：把物业拉进来做中间人，别自己和邻居硬碰。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F51",
+      "category": "关系",
+      "scenario": "大学同学聚会，有人炫耀、有人攀比，去了难受、不去又怕被说不合群。",
+      "pass_a": {
+        "start_king_wen": 15,
+        "start_name": "谦",
+        "start_bits": "001000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 46,
+        "end_name": "升",
+        "end_bits": "011000",
+        "rationale": "功成不居：去不去都行，去了低调点、别跟着攀比。"
+      },
+      "pass_b": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5638661283133645
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 15,
+        "start_name": "谦",
+        "start_bits": "001000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 46,
+        "end_name": "升",
+        "end_bits": "011000",
+        "rationale": "功成不居：去不去都行，去了低调点、别跟着攀比。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F52",
+      "category": "关系",
+      "scenario": "父母生病住院，兄弟姐妹为谁出钱、谁陪护吵起来了。",
+      "pass_a": {
+        "start_king_wen": 45,
+        "start_name": "萃",
+        "start_bits": "000110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 31,
+        "end_name": "咸",
+        "end_bits": "001110",
+        "rationale": "人聚到一起：先把分工和出钱的标准定下来，再谈感情。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4426459609682036
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 45,
+        "start_name": "萃",
+        "start_bits": "000110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 31,
+        "end_name": "咸",
+        "end_bits": "001110",
+        "rationale": "人聚到一起：先把分工和出钱的标准定下来，再谈感情。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F53",
+      "category": "关系",
+      "scenario": "和伴侣冷战三天了，谁也不先开口，其实两人都想和好。",
+      "pass_a": {
+        "start_king_wen": 58,
+        "start_name": "兑",
+        "start_bits": "110110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 17,
+        "end_name": "随",
+        "end_bits": "100110",
+        "rationale": "坦诚沟通：先开口的那个人不是输了，是把关系救回来了。"
+      },
+      "pass_b": {
+        "start_king_wen": 6,
+        "start_name": "讼",
+        "start_bits": "010111",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44935954463187494
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 58,
+        "start_name": "兑",
+        "start_bits": "110110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 17,
+        "end_name": "随",
+        "end_bits": "100110",
+        "rationale": "坦诚沟通：先开口的那个人不是输了，是把关系救回来了。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F54",
+      "category": "关系",
+      "scenario": "职场上被同事抢了功劳，老板还表扬了他，心里憋屈。",
+      "pass_a": {
+        "start_king_wen": 36,
+        "start_name": "明夷",
+        "start_bits": "101000",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "rationale": "环境黑暗：先把功劳的证据留好，等合适的时机再说。"
+      },
+      "pass_b": {
+        "start_king_wen": 58,
+        "start_name": "兑",
+        "start_bits": "110110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.49259426453759164
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 36,
+        "start_name": "明夷",
+        "start_bits": "101000",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "rationale": "环境黑暗：先把功劳的证据留好，等合适的时机再说。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F55",
+      "category": "关系",
+      "scenario": "孩子想学钢琴，学费不便宜，不知道能不能坚持下来。",
+      "pass_a": {
+        "start_king_wen": 53,
+        "start_name": "渐",
+        "start_bits": "001011",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "像大雁一样一步步来：先报个短期的试试，别一下交一年的钱。"
+      },
+      "pass_b": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44529739583873995
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 53,
+        "start_name": "渐",
+        "start_bits": "001011",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "像大雁一样一步步来：先报个短期的试试，别一下交一年的钱。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F56",
+      "category": "关系",
+      "scenario": "老家的房子要不要卖，卖了怕以后回不去，不卖又一直空着。",
+      "pass_a": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 18,
+        "end_name": "蛊",
+        "end_bits": "011001",
+        "rationale": "守住边界：先想清楚房子对你到底意味着什么，再决定卖不卖。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4347606730752184
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 18,
+        "end_name": "蛊",
+        "end_bits": "011001",
+        "rationale": "守住边界：先想清楚房子对你到底意味着什么，再决定卖不卖。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F57",
+      "category": "关系",
+      "scenario": "朋友圈里有人总爱晒、总爱比，看得人心烦，屏蔽又怕对方发现。",
+      "pass_a": {
+        "start_king_wen": 20,
+        "start_name": "观",
+        "start_bits": "000011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "先看清楚：屏蔽是小事，别让别人的晒法左右自己的心情。"
+      },
+      "pass_b": {
+        "start_king_wen": 13,
+        "start_name": "同人",
+        "start_bits": "101111",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 30,
+        "end_name": "离",
+        "end_bits": "101101",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4943172351839696
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 20,
+        "start_name": "观",
+        "start_bits": "000011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "先看清楚：屏蔽是小事，别让别人的晒法左右自己的心情。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F58",
+      "category": "关系",
+      "scenario": "伴侣想养一只狗，你担心没时间照顾，两人意见不一致。",
+      "pass_a": {
+        "start_king_wen": 27,
+        "start_name": "颐",
+        "start_bits": "100001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 41,
+        "end_name": "损",
+        "end_bits": "110001",
+        "rationale": "养什么都要算清楚时间账：先商量好分工，再决定养不养。"
+      },
+      "pass_b": {
+        "start_king_wen": 8,
+        "start_name": "比",
+        "start_bits": "000010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.42442344342181404
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 27,
+        "start_name": "颐",
+        "start_bits": "100001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 41,
+        "end_name": "损",
+        "end_bits": "110001",
+        "rationale": "养什么都要算清楚时间账：先商量好分工，再决定养不养。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F59",
+      "category": "关系",
+      "scenario": "多年没联系的高中同学突然找你借钱，说周转一下。",
+      "pass_a": {
+        "start_king_wen": 44,
+        "start_name": "姤",
+        "start_bits": "011111",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 6,
+        "end_name": "讼",
+        "end_bits": "010111",
+        "rationale": "意外相遇：借可以借，但数额要在自己能承受的范围。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4634916454288688
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 44,
+        "start_name": "姤",
+        "start_bits": "011111",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 6,
+        "end_name": "讼",
+        "end_bits": "010111",
+        "rationale": "意外相遇：借可以借，但数额要在自己能承受的范围。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F60",
+      "category": "关系",
+      "scenario": "父母想来城里长住，家里住不下，租个房子又怕老人觉得被嫌弃。",
+      "pass_a": {
+        "start_king_wen": 46,
+        "start_name": "升",
+        "start_bits": "011000",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 7,
+        "end_name": "师",
+        "end_bits": "010000",
+        "rationale": "像树一样慢慢长：先短住试试，住得惯再谈长住。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4688128759087928
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 46,
+        "start_name": "升",
+        "start_bits": "011000",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 7,
+        "end_name": "师",
+        "end_bits": "010000",
+        "rationale": "像树一样慢慢长：先短住试试，住得惯再谈长住。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F61",
+      "category": "创意",
+      "scenario": "写小说写到一半卡住了，主角的动机怎么都圆不上，是改大纲还是硬写下去？",
+      "pass_a": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          1,
+          5
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "内部出了问题：大纲的毛病要从根上改，改到底局面才能重新向上。"
+      },
+      "pass_b": {
+        "start_king_wen": 12,
+        "start_name": "否",
+        "start_bits": "000111",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 6,
+        "end_name": "讼",
+        "end_bits": "010111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5858020711724781
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          1,
+          5
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "rationale": "内部出了问题：大纲的毛病要从根上改，改到底局面才能重新向上。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F62",
+      "category": "创意",
+      "scenario": "拍短视频，内容用心做但没流量，是坚持风格还是追热点？",
+      "pass_a": {
+        "start_king_wen": 57,
+        "start_name": "巽",
+        "start_bits": "011011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "像风一样渗透：热点可以蹭，但风格不能丢，小步推进。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5298850756035153
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 57,
+        "start_name": "巽",
+        "start_bits": "011011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "像风一样渗透：热点可以蹭，但风格不能丢，小步推进。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F63",
+      "category": "创意",
+      "scenario": "设计一个新 logo，客户说“要大气”，又说不出到底想要什么。",
+      "pass_a": {
+        "start_king_wen": 20,
+        "start_name": "观",
+        "start_bits": "000011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 12,
+        "end_name": "否",
+        "end_bits": "000111",
+        "rationale": "先看清楚再做决定：多给几个方向让客户选，别猜。"
+      },
+      "pass_b": {
+        "start_king_wen": 22,
+        "start_name": "贲",
+        "start_bits": "101001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4900699112944325
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 20,
+        "start_name": "观",
+        "start_bits": "000011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 12,
+        "end_name": "否",
+        "end_bits": "000111",
+        "rationale": "先看清楚再做决定：多给几个方向让客户选，别猜。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F64",
+      "category": "创意",
+      "scenario": "乐队排练总吵架，吉他手想玩重的，主唱想走流行。",
+      "pass_a": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 14,
+        "end_name": "大有",
+        "end_bits": "111101",
+        "rationale": "看法不同：先找到一首两边都能接受的歌，再谈风格。"
+      },
+      "pass_b": {
+        "start_king_wen": 40,
+        "start_name": "解",
+        "start_bits": "010100",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 54,
+        "end_name": "归妹",
+        "end_bits": "110100",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4300495000640882
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 38,
+        "start_name": "睽",
+        "start_bits": "110101",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 14,
+        "end_name": "大有",
+        "end_bits": "111101",
+        "rationale": "看法不同：先找到一首两边都能接受的歌，再谈风格。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F65",
+      "category": "创意",
+      "scenario": "做一个播客，第一期录了三遍都不满意，是继续磨还是先发出来？",
+      "pass_a": {
+        "start_king_wen": 50,
+        "start_name": "鼎",
+        "start_bits": "011101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 56,
+        "end_name": "旅",
+        "end_bits": "001101",
+        "rationale": "新局面立住了：先发出来，听众的反馈比自己磨更有用。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5009884941139062
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 50,
+        "start_name": "鼎",
+        "start_bits": "011101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 56,
+        "end_name": "旅",
+        "end_bits": "001101",
+        "rationale": "新局面立住了：先发出来，听众的反馈比自己磨更有用。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F66",
+      "category": "创意",
+      "scenario": "画了一幅画，自己很满意但没人看得懂，是改还是坚持？",
+      "pass_a": {
+        "start_king_wen": 30,
+        "start_name": "离",
+        "start_bits": "101101",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 21,
+        "end_name": "噬嗑",
+        "end_bits": "100101",
+        "rationale": "像火一样明亮：作品要让人看得见光，先让懂的人看懂。"
+      },
+      "pass_b": {
+        "start_king_wen": 20,
+        "start_name": "观",
+        "start_bits": "000011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 12,
+        "end_name": "否",
+        "end_bits": "000111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.55374939549861
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 30,
+        "start_name": "离",
+        "start_bits": "101101",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 21,
+        "end_name": "噬嗑",
+        "end_bits": "100101",
+        "rationale": "像火一样明亮：作品要让人看得见光，先让懂的人看懂。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F67",
+      "category": "创意",
+      "scenario": "想做一个没人做过的产品，但不知道有没有市场，是先做出来还是先调研？",
+      "pass_a": {
+        "start_king_wen": 1,
+        "start_name": "乾",
+        "start_bits": "111111",
+        "moving_lines": [
+          1,
+          2
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "rationale": "带头做事：先动起来做个最小的版本，机会和同伴会在路上出现。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.503628837272593
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 1,
+        "start_name": "乾",
+        "start_bits": "111111",
+        "moving_lines": [
+          1,
+          2
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "rationale": "带头做事：先动起来做个最小的版本，机会和同伴会在路上出现。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F68",
+      "category": "创意",
+      "scenario": "写歌写不出副歌，旋律在脑子里转了三天，就是落不下来。",
+      "pass_a": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 47,
+        "end_name": "困",
+        "end_bits": "010110",
+        "rationale": "一坑接一坑：先放一放，去走走路，旋律会自己落下来。"
+      },
+      "pass_b": {
+        "start_king_wen": 12,
+        "start_name": "否",
+        "start_bits": "000111",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4799894280122677
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 47,
+        "end_name": "困",
+        "end_bits": "010110",
+        "rationale": "一坑接一坑：先放一放，去走走路，旋律会自己落下来。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F69",
+      "category": "创意",
+      "scenario": "拍纪录片，主角突然反悔不让拍了，前期投入全白费。",
+      "pass_a": {
+        "start_king_wen": 47,
+        "start_name": "困",
+        "start_bits": "010110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 28,
+        "end_name": "大过",
+        "end_bits": "011110",
+        "rationale": "被困住了：找个中间人再谈一次，实在不行就换主角。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4381959907177393
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 47,
+        "start_name": "困",
+        "start_bits": "010110",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 28,
+        "end_name": "大过",
+        "end_bits": "011110",
+        "rationale": "被困住了：找个中间人再谈一次，实在不行就换主角。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F70",
+      "category": "创意",
+      "scenario": "做游戏，玩法很新颖但测试玩家都说看不懂规则。",
+      "pass_a": {
+        "start_king_wen": 4,
+        "start_name": "蒙",
+        "start_bits": "010001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "不懂就问：让玩家告诉你哪里不懂，规则要从玩家的困惑里改。"
+      },
+      "pass_b": {
+        "start_king_wen": 20,
+        "start_name": "观",
+        "start_bits": "000011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 12,
+        "end_name": "否",
+        "end_bits": "000111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.49235619445332646
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 4,
+        "start_name": "蒙",
+        "start_bits": "010001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 59,
+        "end_name": "涣",
+        "end_bits": "010011",
+        "rationale": "不懂就问：让玩家告诉你哪里不懂，规则要从玩家的困惑里改。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F71",
+      "category": "创意",
+      "scenario": "写剧本，投资人要求加一个流量明星，角色根本不适合。",
+      "pass_a": {
+        "start_king_wen": 22,
+        "start_name": "贲",
+        "start_bits": "101001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "外表光鲜：明星可以加，但角色和故事不能为明星让路。"
+      },
+      "pass_b": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 1,
+        "end_name": "乾",
+        "end_bits": "111111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.44095120433530993
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 22,
+        "start_name": "贲",
+        "start_bits": "101001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "外表光鲜：明星可以加，但角色和故事不能为明星让路。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F72",
+      "category": "创意",
+      "scenario": "摄影展的照片选好了，场地突然说档期给了别人。",
+      "pass_a": {
+        "start_king_wen": 24,
+        "start_name": "复",
+        "start_bits": "100000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 19,
+        "end_name": "临",
+        "end_bits": "110000",
+        "rationale": "低谷反弹：场地没了就换个地方，作品在、展览就能重新开始。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4047518450819818
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 24,
+        "start_name": "复",
+        "start_bits": "100000",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 19,
+        "end_name": "临",
+        "end_bits": "110000",
+        "rationale": "低谷反弹：场地没了就换个地方，作品在、展览就能重新开始。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F73",
+      "category": "创意",
+      "scenario": "做手工品牌，订单多了做不过来，是涨价还是找人帮忙？",
+      "pass_a": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "小有收获：先涨一点价把量压下来，别急着扩招。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4558668732783988
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "小有收获：先涨一点价把量压下来，别急着扩招。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F74",
+      "category": "创意",
+      "scenario": "写公众号，追热点涨粉快，但写得心累，不追又怕掉粉。",
+      "pass_a": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "rationale": "凡事有度：定个节奏，热点一周最多追一次，剩下的写自己想写的。"
+      },
+      "pass_b": {
+        "start_king_wen": 9,
+        "start_name": "小畜",
+        "start_bits": "111011",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.551935901595573
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "rationale": "凡事有度：定个节奏，热点一周最多追一次，剩下的写自己想写的。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F75",
+      "category": "创意",
+      "scenario": "编舞编到一半，音乐换了版权方不让用了。",
+      "pass_a": {
+        "start_king_wen": 49,
+        "start_name": "革",
+        "start_bits": "101110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "rationale": "旧的要改：音乐换了就换个思路编，变革要顺着音乐走。"
+      },
+      "pass_b": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 52,
+        "end_name": "艮",
+        "end_bits": "001001",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.41558581457426974
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": true,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 49,
+        "start_name": "革",
+        "start_bits": "101110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "rationale": "旧的要改：音乐换了就换个思路编，变革要顺着音乐走。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F76",
+      "category": "创意",
+      "scenario": "做播客想请个大咖，对方一直不回消息，是继续约还是放弃？",
+      "pass_a": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "rationale": "时机未到：先做几期好的内容出来，再去约更有底气。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4767508344050605
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "rationale": "时机未到：先做几期好的内容出来，再去约更有底气。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F77",
+      "category": "创意",
+      "scenario": "小说里两个角色的感情线写崩了，读者都在骂。",
+      "pass_a": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 62,
+        "end_name": "小过",
+        "end_bits": "001100",
+        "rationale": "两心相感：感情线要从人物的真实动机里长出来，别硬拗。"
+      },
+      "pass_b": {
+        "start_king_wen": 40,
+        "start_name": "解",
+        "start_bits": "010100",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 54,
+        "end_name": "归妹",
+        "end_bits": "110100",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.49403696482701975
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 31,
+        "start_name": "咸",
+        "start_bits": "001110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 62,
+        "end_name": "小过",
+        "end_bits": "001100",
+        "rationale": "两心相感：感情线要从人物的真实动机里长出来，别硬拗。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F78",
+      "category": "创意",
+      "scenario": "做独立游戏，美术风格定了三版都不满意，时间却不多了。",
+      "pass_a": {
+        "start_king_wen": 21,
+        "start_name": "噬嗑",
+        "start_bits": "100101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 38,
+        "end_name": "睽",
+        "end_bits": "110101",
+        "rationale": "中间有梗阻：定个 deadline，选最接近的那版，别无限改下去。"
+      },
+      "pass_b": {
+        "start_king_wen": 12,
+        "start_name": "否",
+        "start_bits": "000111",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4860888308331181
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 21,
+        "start_name": "噬嗑",
+        "start_bits": "100101",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 38,
+        "end_name": "睽",
+        "end_bits": "110101",
+        "rationale": "中间有梗阻：定个 deadline，选最接近的那版，别无限改下去。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F79",
+      "category": "创意",
+      "scenario": "拍 vlog，剪出来的片子自己看着都困，是重剪还是换题材？",
+      "pass_a": {
+        "start_king_wen": 16,
+        "start_name": "豫",
+        "start_bits": "000100",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 62,
+        "end_name": "小过",
+        "end_bits": "001100",
+        "rationale": "心情松快：先想清楚观众为什么会困，再动手重剪。"
+      },
+      "pass_b": {
+        "start_king_wen": 43,
+        "start_name": "夬",
+        "start_bits": "111110",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4724263351755684
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 16,
+        "start_name": "豫",
+        "start_bits": "000100",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 62,
+        "end_name": "小过",
+        "end_bits": "001100",
+        "rationale": "心情松快：先想清楚观众为什么会困，再动手重剪。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F80",
+      "category": "创意",
+      "scenario": "写诗投稿被退了三次，编辑说“感觉不对”，又不说哪里不对。",
+      "pass_a": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 23,
+        "end_name": "剥",
+        "end_bits": "000001",
+        "rationale": "该停就停：先放一阵子，回头再读自己的诗，问题会自己冒出来。"
+      },
+      "pass_b": {
+        "start_king_wen": 54,
+        "start_name": "归妹",
+        "start_bits": "110100",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 38,
+        "end_name": "睽",
+        "end_bits": "110101",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4413164818764831
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 23,
+        "end_name": "剥",
+        "end_bits": "000001",
+        "rationale": "该停就停：先放一阵子，回头再读自己的诗，问题会自己冒出来。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F81",
+      "category": "日常",
+      "scenario": "连续熬夜一周，身体开始抗议，但手头的事一件都没做完。",
+      "pass_a": {
+        "start_king_wen": 27,
+        "start_name": "颐",
+        "start_bits": "100001",
+        "moving_lines": [
+          3,
+          5
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "靠什么养自己：先睡一觉把根本养好，事情可以晚一天做。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 43,
+        "end_name": "夬",
+        "end_bits": "111110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4493275035653945
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 27,
+        "start_name": "颐",
+        "start_bits": "100001",
+        "moving_lines": [
+          3,
+          5
+        ],
+        "end_king_wen": 37,
+        "end_name": "家人",
+        "end_bits": "101011",
+        "rationale": "靠什么养自己：先睡一觉把根本养好，事情可以晚一天做。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F82",
+      "category": "日常",
+      "scenario": "减肥减了两个月，体重一点没动，是方法错了还是坚持得不够？",
+      "pass_a": {
+        "start_king_wen": 32,
+        "start_name": "恒",
+        "start_bits": "011100",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 40,
+        "end_name": "解",
+        "end_bits": "010100",
+        "rationale": "长久坚持：先检查方法对不对，节奏对了才谈坚持。"
+      },
+      "pass_b": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 32,
+        "end_name": "恒",
+        "end_bits": "011100",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.57763631254127
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 32,
+        "start_name": "恒",
+        "start_bits": "011100",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 40,
+        "end_name": "解",
+        "end_bits": "010100",
+        "rationale": "长久坚持：先检查方法对不对，节奏对了才谈坚持。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F83",
+      "category": "日常",
+      "scenario": "手机用了三年，电池不行了，换电池还是换新机？",
+      "pass_a": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "rationale": "先舍后得：换电池是小钱，换新机是大钱，先算清楚再决定。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.48877366282185486
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "rationale": "先舍后得：换电池是小钱，换新机是大钱，先算清楚再决定。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F84",
+      "category": "日常",
+      "scenario": "周末想出去玩，但家里一堆事没做完，去还是不去？",
+      "pass_a": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 56,
+        "end_name": "旅",
+        "end_bits": "001101",
+        "rationale": "该停就停：家里的事做不完就先停半天，出去透透气回来再做。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4720225383612059
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          4
+        ],
+        "end_king_wen": 56,
+        "end_name": "旅",
+        "end_bits": "001101",
+        "rationale": "该停就停：家里的事做不完就先停半天，出去透透气回来再做。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F85",
+      "category": "日常",
+      "scenario": "存了点钱，是先还房贷还是留着应急？",
+      "pass_a": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 3,
+        "end_name": "屯",
+        "end_bits": "100010",
+        "rationale": "凡事有度：留够应急的钱，剩下的再还房贷。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5287209678308906
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 60,
+        "start_name": "节",
+        "start_bits": "110010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 3,
+        "end_name": "屯",
+        "end_bits": "100010",
+        "rationale": "凡事有度：留够应急的钱，剩下的再还房贷。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F86",
+      "category": "日常",
+      "scenario": "孩子发烧 38 度，是去医院还是在家观察？",
+      "pass_a": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "一坑接一坑：先看精神状态，精神好就在家观察，精神差马上送医院。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4190451575216959
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 29,
+        "start_name": "坎",
+        "start_bits": "010010",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "一坑接一坑：先看精神状态，精神好就在家观察，精神差马上送医院。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F87",
+      "category": "日常",
+      "scenario": "老家房子漏水，修一次要不少钱，不修又越漏越厉害。",
+      "pass_a": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          2,
+          4
+        ],
+        "end_king_wen": 56,
+        "end_name": "旅",
+        "end_bits": "001101",
+        "rationale": "内部出了问题：漏水不修只会越拖越贵，先从基层动手，再把整顿做到底。"
+      },
+      "pass_b": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          1,
+          3
+        ],
+        "end_king_wen": 18,
+        "end_name": "蛊",
+        "end_bits": "011001",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5249945533556968
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 18,
+        "start_name": "蛊",
+        "start_bits": "011001",
+        "moving_lines": [
+          2,
+          4
+        ],
+        "end_king_wen": 56,
+        "end_name": "旅",
+        "end_bits": "001101",
+        "rationale": "内部出了问题：漏水不修只会越拖越贵，先从基层动手，再把整顿做到底。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F88",
+      "category": "日常",
+      "scenario": "每天通勤两小时，累得没时间陪家人，是换工作还是搬家？",
+      "pass_a": {
+        "start_king_wen": 56,
+        "start_name": "旅",
+        "start_bits": "001101",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "rationale": "在外漂泊：先算清楚换工作和搬家各自的代价，再选。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5233928301782805
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 56,
+        "start_name": "旅",
+        "start_bits": "001101",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "rationale": "在外漂泊：先算清楚换工作和搬家各自的代价，再选。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F89",
+      "category": "日常",
+      "scenario": "想学一门新手艺，报了课又总没时间去，钱白花了。",
+      "pass_a": {
+        "start_king_wen": 53,
+        "start_name": "渐",
+        "start_bits": "001011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "像大雁一样一步步来：先每周固定一个小时，能坚持再加量。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4912581530458588
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 53,
+        "start_name": "渐",
+        "start_bits": "001011",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "rationale": "像大雁一样一步步来：先每周固定一个小时，能坚持再加量。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F90",
+      "category": "日常",
+      "scenario": "家里的旧东西堆满了阳台，扔舍不得、留着占地方。",
+      "pass_a": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 61,
+        "end_name": "中孚",
+        "end_bits": "110011",
+        "rationale": "减掉多余的才能轻装上路：先扔掉一年没用过的。"
+      },
+      "pass_b": {
+        "start_king_wen": 37,
+        "start_name": "家人",
+        "start_bits": "101011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.45303491054093653
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 61,
+        "end_name": "中孚",
+        "end_bits": "110011",
+        "rationale": "减掉多余的才能轻装上路：先扔掉一年没用过的。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F91",
+      "category": "日常",
+      "scenario": "体检报告出来几项指标偏高，医生说注意饮食，但应酬推不掉。",
+      "pass_a": {
+        "start_king_wen": 27,
+        "start_name": "颐",
+        "start_bits": "100001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "言语和饮食都要节制：应酬能推就推，推不掉就少吃多动。"
+      },
+      "pass_b": {
+        "start_king_wen": 28,
+        "start_name": "大过",
+        "start_bits": "011110",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 31,
+        "end_name": "咸",
+        "end_bits": "001110",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5171448502240927
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 27,
+        "start_name": "颐",
+        "start_bits": "100001",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "言语和饮食都要节制：应酬能推就推，推不掉就少吃多动。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F92",
+      "category": "日常",
+      "scenario": "下雨天开车上班，路上堵得一动不动，是等还是绕路？",
+      "pass_a": {
+        "start_king_wen": 39,
+        "start_name": "蹇",
+        "start_bits": "001010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "走不动了：看看导航有没有小路，别在一条路上死等。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          1,
+          2
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5987677958526736
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 39,
+        "start_name": "蹇",
+        "start_bits": "001010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 48,
+        "end_name": "井",
+        "end_bits": "011010",
+        "rationale": "走不动了：看看导航有没有小路，别在一条路上死等。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F93",
+      "category": "日常",
+      "scenario": "想给父母买个礼物，买贵的怕他们心疼，买便宜的又怕不够好。",
+      "pass_a": {
+        "start_king_wen": 15,
+        "start_name": "谦",
+        "start_bits": "001000",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 2,
+        "end_name": "坤",
+        "end_bits": "000000",
+        "rationale": "功成不居：礼物贵贱不重要，合心意、让父母安心才重要。"
+      },
+      "pass_b": {
+        "start_king_wen": 54,
+        "start_name": "归妹",
+        "start_bits": "110100",
+        "moving_lines": [
+          1,
+          2
+        ],
+        "end_king_wen": 16,
+        "end_name": "豫",
+        "end_bits": "000100",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.41141232366611713
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 15,
+        "start_name": "谦",
+        "start_bits": "001000",
+        "moving_lines": [
+          3
+        ],
+        "end_king_wen": 2,
+        "end_name": "坤",
+        "end_bits": "000000",
+        "rationale": "功成不居：礼物贵贱不重要，合心意、让父母安心才重要。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F94",
+      "category": "日常",
+      "scenario": "每天刷手机到半夜，第二天起不来，想戒又戒不掉。",
+      "pass_a": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 22,
+        "end_name": "贲",
+        "end_bits": "101001",
+        "rationale": "该停就停：先定个睡觉前一小时不碰手机的规矩。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 63,
+        "end_name": "既济",
+        "end_bits": "101010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4954378359855417
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 52,
+        "start_name": "艮",
+        "start_bits": "001001",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 22,
+        "end_name": "贲",
+        "end_bits": "101001",
+        "rationale": "该停就停：先定个睡觉前一小时不碰手机的规矩。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F95",
+      "category": "日常",
+      "scenario": "菜市场买菜，总觉得被缺斤少两，是换个摊还是当面说？",
+      "pass_a": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "心中有诚信：先当面客气地提一次，再有下次就换摊。"
+      },
+      "pass_b": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          4,
+          6
+        ],
+        "end_king_wen": 54,
+        "end_name": "归妹",
+        "end_bits": "110100",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4846590831604251
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 61,
+        "start_name": "中孚",
+        "start_bits": "110011",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 42,
+        "end_name": "益",
+        "end_bits": "100011",
+        "rationale": "心中有诚信：先当面客气地提一次，再有下次就换摊。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F96",
+      "category": "日常",
+      "scenario": "冬天到了，暖气还没来，家里冷得睡不着，是买电暖器还是忍几天？",
+      "pass_a": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "时机未到：先买个小的顶几天，暖气来了就不用了。"
+      },
+      "pass_b": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 9,
+        "end_name": "小畜",
+        "end_bits": "111011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4953864458139379
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 5,
+        "start_name": "需",
+        "start_bits": "111010",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 11,
+        "end_name": "泰",
+        "end_bits": "111000",
+        "rationale": "时机未到：先买个小的顶几天，暖气来了就不用了。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F97",
+      "category": "日常",
+      "scenario": "朋友推荐了一只股票，说肯定涨，买还是不买？",
+      "pass_a": {
+        "start_king_wen": 25,
+        "start_name": "无妄",
+        "start_bits": "100111",
+        "moving_lines": [
+          1,
+          3
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "rationale": "不妄动：按本分做事，别听风就是雨，先想清楚自己能不能承受。"
+      },
+      "pass_b": {
+        "start_king_wen": 42,
+        "start_name": "益",
+        "start_bits": "100011",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 20,
+        "end_name": "观",
+        "end_bits": "000011",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4975663608569228
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 25,
+        "start_name": "无妄",
+        "start_bits": "100111",
+        "moving_lines": [
+          1,
+          3
+        ],
+        "end_king_wen": 33,
+        "end_name": "遁",
+        "end_bits": "001111",
+        "rationale": "不妄动：按本分做事，别听风就是雨，先想清楚自己能不能承受。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F98",
+      "category": "日常",
+      "scenario": "家里养的花总养不活，换了几盆还是死。",
+      "pass_a": {
+        "start_king_wen": 48,
+        "start_name": "井",
+        "start_bits": "011010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "rationale": "养好根本：先弄明白是水多了还是光少了，再谈养花。"
+      },
+      "pass_b": {
+        "start_king_wen": 48,
+        "start_name": "井",
+        "start_bits": "011010",
+        "moving_lines": [
+          1
+        ],
+        "end_king_wen": 5,
+        "end_name": "需",
+        "end_bits": "111010",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4310355221435355
+      },
+      "agreement": {
+        "start_agree": true,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 48,
+        "start_name": "井",
+        "start_bits": "011010",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 39,
+        "end_name": "蹇",
+        "end_bits": "001010",
+        "rationale": "养好根本：先弄明白是水多了还是光少了，再谈养花。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F99",
+      "category": "日常",
+      "scenario": "想跑步锻炼，跑两天就放弃了，每次都是这样。",
+      "pass_a": {
+        "start_king_wen": 32,
+        "start_name": "恒",
+        "start_bits": "011100",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 28,
+        "end_name": "大过",
+        "end_bits": "011110",
+        "rationale": "长久坚持：别定每天五公里，先定每天十分钟。"
+      },
+      "pass_b": {
+        "start_king_wen": 41,
+        "start_name": "损",
+        "start_bits": "110001",
+        "moving_lines": [
+          2
+        ],
+        "end_king_wen": 27,
+        "end_name": "颐",
+        "end_bits": "100001",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.4856713059743007
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 32,
+        "start_name": "恒",
+        "start_bits": "011100",
+        "moving_lines": [
+          5
+        ],
+        "end_king_wen": 28,
+        "end_name": "大过",
+        "end_bits": "011110",
+        "rationale": "长久坚持：别定每天五公里，先定每天十分钟。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    },
+    {
+      "id": "F100",
+      "category": "日常",
+      "scenario": "年底了，想给自己定个新年目标，定高了怕完不成，定低了又觉得没劲。",
+      "pass_a": {
+        "start_king_wen": 26,
+        "start_name": "大畜",
+        "start_bits": "111001",
+        "moving_lines": [
+          2,
+          6
+        ],
+        "end_king_wen": 36,
+        "end_name": "明夷",
+        "end_bits": "101000",
+        "rationale": "积蓄力量：目标定在踮脚够得着的地方，蓄满了再往上加。"
+      },
+      "pass_b": {
+        "start_king_wen": 16,
+        "start_name": "豫",
+        "start_bits": "000100",
+        "moving_lines": [
+          6
+        ],
+        "end_king_wen": 35,
+        "end_name": "晋",
+        "end_bits": "000101",
+        "method": "embedding-resonance top-1 + v1 reasoner path (rich documents)",
+        "top1_score": 0.5707309218601946
+      },
+      "agreement": {
+        "start_agree": false,
+        "lines_agree": false,
+        "full_agree": false
+      },
+      "flagged": true,
+      "final_source": "A (tie-break; pass C pending human review)",
+      "proposed": {
+        "start_king_wen": 26,
+        "start_name": "大畜",
+        "start_bits": "111001",
+        "moving_lines": [
+          2,
+          6
+        ],
+        "end_king_wen": 36,
+        "end_name": "明夷",
+        "end_bits": "101000",
+        "rationale": "积蓄力量：目标定在踮脚够得着的地方，蓄满了再往上加。"
+      },
+      "label_status": "draft — pass A (author) + pass B (embedding resonance); pass C pending human review; NOT ground truth"
+    }
+  ]
+}
