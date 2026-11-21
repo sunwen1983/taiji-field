@@ -16,7 +16,7 @@ Phase 1 填的是接地那一半：情境 → 态的映射第一次有了可运�
   找最共振的卦，返回 top-3。64 个卦文档的 embedding 缓存在 `taiji_field/data/embeddings.npz`，
   用 `python scripts/build_embeddings.py` 重建。
 - **共振推理 v1**（`taiji_field/reasoning.py`）：从 top-1 卦出发，沿变爻边展开 1–3 步，
-  枚举全部简单路径（≤156 条），按"落点共振 − 0.05×步数"排名，输出最好的一条。
+  枚举全部简单路径（≤186 条），按"落点共振 − 0.05×步数"排名，输出最好的一条。
 - **解释器 v1**（`taiji_field/interpreter.py`）：模板中文解释——动了哪一爻、两端卦的一句解读、
   一句综合。模板而已，见下。
 - **考试卷子 v1**（`taiji_field/data/exam_v1.json` + `docs/exam-v1.md`）：30 个情境
