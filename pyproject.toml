@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taiji-field"
+version = "0.1.0"
+description = "Taiji Field — a token-free, state-dynamics substrate for intelligence, inspired by the I Ching (Yijing) and the Chinese idea of yihui (understanding through resonance)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sun Wen" }]
+requires-python = ">=3.10"
+dependencies = [
+    "networkx",
+    "matplotlib",
+    "zhouyi-6bit",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["taiji_field*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
